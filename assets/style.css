@@ -187,6 +187,9 @@ section.alt{background:var(--ink-2)}
   font-family:var(--serif); font-size:13px; letter-spacing:.24em;
   text-transform:uppercase; color:var(--muted);
 }
+/* while the placeholder is showing, its label is enough - the caption would
+   just repeat it. site.js removes .ph when a real photo loads, revealing this. */
+.shot .ph ~ figcaption{display:none}
 .shot figcaption{
   position:absolute; left:0; right:0; bottom:0; padding:26px 14px 12px;
   background:linear-gradient(transparent,rgba(10,9,8,.88));
