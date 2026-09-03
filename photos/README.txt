@@ -1,15 +1,28 @@
-Drop real photos in this folder using these exact filenames and they will
-appear on the Gallery page automatically (the placeholder tile disappears):
+PHOTOS
+======
+The images in here are STOCK PLACEHOLDERS from Pexels (free for commercial
+use, no attribution required). They have all been colour-graded to match the
+brand so they read as one set.
 
-  lash-1.jpg    Classic set
-  lash-2.jpg    Hybrid set
-  lash-3.jpg    Volume set
-  lash-4.jpg    Lash lift & tint
-  lash-5.jpg    Mega volume
-  brow-1.jpg    Brow lamination
-  brow-2.jpg    Brow shape & tint
-  brow-3.jpg    Brow henna
-  studio-1.jpg  The studio
+>>> REPLACE THESE WITH REAL CLIENT WORK BEFORE PROPERLY LAUNCHING. <<<
+Showing other people's lash work as your portfolio is misleading to clients
+and is the one thing that will undermine trust in the site.
 
-Portrait crops work best (4:5, e.g. 1200x1500). Keep each under ~400KB.
-Any filename that isn't there just keeps its placeholder - nothing breaks.
+To swap one in, just overwrite the file, keeping the same filename:
+
+  lash-1.jpg    Classic set            (gallery)
+  lash-2.jpg    Hybrid set             (gallery)
+  lash-3.jpg    Volume set             (gallery)
+  lash-4.jpg    Lash lift & tint       (gallery + aftercare header)
+  lash-5.jpg    Mega volume            (gallery + gallery header)
+  brow-1.jpg    Brow lamination        (gallery)
+  brow-2.jpg    Brow shape & tint      (gallery + contact header)
+  brow-3.jpg    Brow henna             (gallery)
+  studio-1.jpg  The studio             (gallery + about)
+  hero.jpg      Home page hero         (wide, 1900x1150)
+  feature.jpg   "Unhurried" band       (1400x1000)
+  service-lash.jpg / service-lift.jpg / service-brow.jpg
+                Home service tiles     (900x700)
+
+Gallery/portrait shots: 4:5 crop, about 1000x1250.
+Keep each file under ~250KB so the site stays fast.
