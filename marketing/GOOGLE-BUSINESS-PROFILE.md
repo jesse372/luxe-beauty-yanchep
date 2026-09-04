@@ -158,3 +158,24 @@ Get the same name/address/phone onto these (consistency across them is a ranking
 - Apple Business Connect (so she appears in Apple Maps)
 - True Local, Yellow Pages AU, Hotfrog AU
 - Any Yanchep / northern-suburbs community directory
+
+
+---
+
+## 12. Booking & cancellation policy (as configured in Square)
+
+No deposit is taken. Clients add a card when booking, which is **held, not charged**.
+Payment happens on the day — cash accepted.
+
+- Cancel or reschedule with **24+ hours notice**: no charge, no limit on reschedules.
+- **Inside 24 hours or a no-show**: 50% of the booked service is charged to the card on file.
+
+Set up in Square: **Appointments → Settings → Payments & cancellations → Hold card in case
+of no-show**. Requires Square Appointments **Plus** ($40/month AUD); the free tier cannot
+hold cards.
+
+Square shows the policy to the client before they confirm, which is what makes it
+enforceable — under Australian Consumer Law a cancellation fee has to be disclosed up
+front and be a genuine estimate of the loss, not a punishment. 50% of a two-hour slot
+that can't be refilled at a day's notice is defensible; charging 100%, or charging for a
+cancellation made a week out, would not be.
