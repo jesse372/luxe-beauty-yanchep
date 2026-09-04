@@ -1,28 +1,28 @@
 PHOTOS
 ======
-The images in here are STOCK PLACEHOLDERS from Pexels (free for commercial
-use, no attribution required). They have all been colour-graded to match the
-brand so they read as one set.
+These are STOCK PLACEHOLDERS from Pexels (free for commercial use, no
+attribution required), lightly graded so the set hangs together.
 
->>> REPLACE THESE WITH REAL CLIENT WORK BEFORE PROPERLY LAUNCHING. <<<
-Showing other people's lash work as your portfolio is misleading to clients
-and is the one thing that will undermine trust in the site.
+They are editorial portraits of PROFESSIONAL MODELS. They are not client work.
 
-To swap one in, just overwrite the file, keeping the same filename:
+>>> REPLACE WITH REAL CLIENT PHOTOS BEFORE ANY REAL MARKETING PUSH. <<<
+Site copy has deliberately been written NOT to claim these are her work -
+the gallery says "the look" and "the finish every set is mapped toward",
+never "recent clients". If you swap that wording back, make sure the photos
+are genuinely hers first. Do NOT upload any of these to Google Business
+Profile: Google requires photos to represent the business and can flag it.
 
-  lash-1.jpg    Classic set            (gallery)
-  lash-2.jpg    Hybrid set             (gallery)
-  lash-3.jpg    Volume set             (gallery)
-  lash-4.jpg    Lash lift & tint       (gallery + aftercare header)
-  lash-5.jpg    Mega volume            (gallery + gallery header)
-  brow-1.jpg    Brow lamination        (gallery)
-  brow-2.jpg    Brow shape & tint      (gallery + contact header)
-  brow-3.jpg    Brow henna             (gallery)
-  studio-1.jpg  The studio             (gallery + about)
-  hero.jpg      Home page hero         (wide, 1900x1150)
-  feature.jpg   "Unhurried" band       (1400x1000)
-  service-lash.jpg / service-lift.jpg / service-brow.jpg
-                Home service tiles     (900x700)
+Overwrite in place, keeping the filenames:
 
-Gallery/portrait shots: 4:5 crop, about 1000x1250.
-Keep each file under ~250KB so the site stays fast.
+  hero.jpg          Home hero              1900x1150  (wide)
+  bleed.jpg         Full-bleed band        1900x1100  (wide, dramatic)
+  feature.jpg       "Unhurried" band       1400x1680  (portrait 5:6)
+  service-lash.jpg  \
+  service-lift.jpg   > Home service tiles   900x1000
+  service-brow.jpg  /
+  lash-1..5.jpg     Gallery                1000x1250  (portrait 4:5)
+  brow-1..3.jpg     Gallery                1000x1250
+  studio-1.jpg      Gallery                1000x1250
+
+Keep each under ~300KB. Shoot portrait, in good natural light, on a plain
+background - that is what makes them sit alongside each other.
