@@ -184,3 +184,29 @@ Until then it is $480/year against a risk that hasn't materialised.
 
 Under Australian Consumer Law any retained deposit must be disclosed before booking and be
 a genuine estimate of the loss. $20 against a two-hour slot is comfortably defensible.
+
+---
+
+## 13. Getting the services into Square
+
+Square will not read prices from the website — its booking flow runs off its own service
+library, so the catalogue has to exist in Square too. Two ways to avoid typing 19 services:
+
+**Option A — paste the website URL.** Square Appointments can import a service list from a
+web page. Give it:
+
+    https://luxebeautyyanchep.com/services.html
+
+**Option B — upload the CSV.** `marketing/square-services-import.csv` in this repo, with
+service name, description, duration and price for all 19. Square's importer caps at 30.
+
+Square Dashboard → **Appointments → Services → Import**.
+
+**Durations in the CSV are estimates** and should be checked against how long she actually
+takes. Getting them wrong is worse than getting prices wrong: too short and the day
+overbooks and runs late, too long and she loses bookable hours. Square also has a separate
+buffer/processing-time setting if she wants gaps between clients.
+
+If prices ever change, they must be changed in **both** Square and the website — there is
+no sync between them. The website is the marketing copy; Square is the source of truth for
+what actually gets charged.
