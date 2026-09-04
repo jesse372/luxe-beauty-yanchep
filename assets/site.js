@@ -80,6 +80,37 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("in"); });
   }
 
+  /* --- scroll progress hairline ----------------------------- */
+  var bar = document.createElement("div");
+  bar.className = "progress";
+  document.body.appendChild(bar);
+
+  var reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
+  var pxEls = [].slice.call(document.querySelectorAll(".px"));
+  var ticking = false;
+
+  function onScroll() {
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - innerHeight;
+    bar.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + "%";
+
+    if (!reduce) {
+      for (var i = 0; i < pxEls.length; i++) {
+        var el = pxEls[i], r = el.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > innerHeight + 200) continue;
+        // -1..1 across the viewport, scaled to a gentle drift
+        var p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+        el.style.transform = "translate3d(0," + (p * -34).toFixed(2) + "px,0)";
+      }
+    }
+    ticking = false;
+  }
+  addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  addEventListener("resize", onScroll, { passive: true });
+  onScroll();
+
   /* --- footer year ----------------------------------------- */
   var y = document.getElementById("yr");
   if (y) y.textContent = new Date().getFullYear();
