@@ -81,11 +81,11 @@ tests available before your first appointment.
 
 ## 5. Hours
 
-Mon–Fri 9:00am – 5:00pm
-Saturday 9:00am – 2:00pm
+Mon–Sat 9:00am – 5:00pm
 Sunday closed
 
-*(Confirm these are real before publishing — they were placeholders I wrote.)*
+Real availability comes from Square (synced to Bec's Google Calendar), so these are
+just the general opening hours. Keep them broad and let the booking system show the truth.
 
 ---
 
