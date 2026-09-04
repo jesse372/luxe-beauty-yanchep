@@ -7,12 +7,13 @@
    whole site updates. Until then it falls back to Instagram DMs.
    ============================================================ */
 
-const BOOKING_URL = "https://www.instagram.com/luxebeautyyanchep/";
+const BOOKING_URL = "https://squareup.com/appointments/book/Q0QM7TJZ6949G";
 
 const CONTACT = {
   instagram: "https://www.instagram.com/luxebeautyyanchep/",
-  email:     "",          // e.g. "hello@luxebeautyyanchep.com.au"
-  phone:     ""           // e.g. "0400 000 000"  (digits only in tel: below)
+  email:     "",          // waiting on a Luxe-branded address; the old
+                          // blushbeautyparlour@outlook.com is off-brand now
+  phone:     "0411 487 177"
 };
 
 document.addEventListener("DOMContentLoaded", function () {
