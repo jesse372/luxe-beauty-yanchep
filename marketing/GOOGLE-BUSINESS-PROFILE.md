@@ -162,20 +162,25 @@ Get the same name/address/phone onto these (consistency across them is a ranking
 
 ---
 
-## 12. Booking & cancellation policy (as configured in Square)
+## 12. Booking & cancellation policy (free Square plan)
 
-No deposit is taken. Clients add a card when booking, which is **held, not charged**.
-Payment happens on the day — cash accepted.
+Running on **Square Appointments Free**, which cannot hold cards. Policy is therefore:
 
-- Cancel or reschedule with **24+ hours notice**: no charge, no limit on reschedules.
-- **Inside 24 hours or a no-show**: 50% of the booked service is charged to the card on file.
+- **New clients**: a $20 deposit confirms the first appointment, taken off the total on the day.
+  Send it as a Square payment link or invoice (free to create; you pay only processing).
+- **Returning clients**: no deposit.
+- **24+ hours notice**: deposit moves to the new booking.
+- **Inside 24 hours or a no-show**: deposit is kept.
+- Balance paid on the day. Cash accepted.
 
-Set up in Square: **Appointments → Settings → Payments & cancellations → Hold card in case
-of no-show**. Requires Square Appointments **Plus** ($40/month AUD); the free tier cannot
-hold cards.
+Turn on **automated appointment reminders** in Square — free, and far more effective at
+preventing no-shows than any fee, which only recovers money after the slot is already lost.
 
-Square shows the policy to the client before they confirm, which is what makes it
-enforceable — under Australian Consumer Law a cancellation fee has to be disclosed up
-front and be a genuine estimate of the loss, not a punishment. 50% of a two-hour slot
-that can't be refilled at a day's notice is defensible; charging 100%, or charging for a
-cancellation made a week out, would not be.
+### When to upgrade
+Square Appointments **Plus** ($40/month AUD) adds proper no-show protection: a card is held
+at booking and auto-charged on a late cancellation, with no manual deposit chasing.
+Worth it once either happens: **two actual no-shows**, or **four-plus appointments a week**.
+Until then it is $480/year against a risk that hasn't materialised.
+
+Under Australian Consumer Law any retained deposit must be disclosed before booking and be
+a genuine estimate of the loss. $20 against a two-hour slot is comfortably defensible.
