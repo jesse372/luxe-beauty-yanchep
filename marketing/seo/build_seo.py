@@ -9,6 +9,8 @@ It is idempotent - safe to re-run after editing suburbs.py.
 import json, os, sys, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from suburbs import TIER_A, TIER_B
+_a = {s['name'] for s in TIER_A}
+TIER_B = [b for b in TIER_B if b[0] not in _a]   # promoted suburbs get a page, not a row
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 SITE = "https://luxebeautyyanchep.com"
@@ -41,10 +43,15 @@ def footer(area_line):
       <div><h4>Luxe Beauty Yanchep</h4>
         <p>Luxury lashes &amp; brows in a private home studio.<br>Enhancing your natural beauty.</p></div>
       <div><h4>Treatments</h4>
-        <a href="lash-extensions-yanchep.html">Lash extensions Yanchep</a>
+        <a href="lash-extensions-yanchep.html">Lash extension prices</a>
         <a href="lash-lift-yanchep.html">Lash lift &amp; tint Yanchep</a>
         <a href="brow-lamination-yanchep.html">Brow lamination Yanchep</a>
         <a href="services.html">All services &amp; pricing</a></div>
+      <div><h4>Guides</h4>
+        <a href="lash-extensions-cost-perth.html">What lashes cost</a>
+        <a href="lash-lift-vs-extensions.html">Lift vs extensions</a>
+        <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a>
+        <a href="brow-lamination-vs-microblading.html">Lamination vs microblading</a></div>
       <div><h4>Areas served</h4>
         <a href="areas-we-serve.html">All areas we serve</a>
         <a href="lash-extensions-butler.html">Lashes Butler</a>
@@ -112,9 +119,10 @@ def head(title, desc, slug, hero_img, extra_ld):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="preload" as="image" href="{hero}" fetchpriority="high">
 {ld}
 </head>
-<body>""".format(t=title, d=desc, u=url, s=SITE, ld=extra_ld)
+<body>""".format(t=title, d=desc, u=url, s=SITE, ld=extra_ld, hero=hero_img)
 
 def ld(obj):
     return '<script type="application/ld+json">\n%s\n</script>' % json.dumps(obj, ensure_ascii=False)
@@ -288,7 +296,7 @@ def build_hub():
       '<span class="price">{km} km</span></div>\n'.format(n=b[0], pc=b[1], km=b[2], mins=b[3])
       for b in sorted(TIER_B, key=lambda x: x[2]))
 
-    h = head(title, desc, slug, "photos/hero.jpg", "\n".join([ld(biz), ld(crumb)]))
+    h = head(title, desc, slug, "photos/bleed.jpg", "\n".join([ld(biz), ld(crumb)]))
     body = """
 {nav}
 
@@ -393,11 +401,15 @@ def main():
     written.append((slug, "0.9"))
     print("  wrote", slug)
 
+    guides = [("lash-extensions-cost-perth.html","0.8"),("lash-lift-vs-extensions.html","0.8"),
+              ("classic-vs-hybrid-vs-volume-lashes.html","0.7"),
+              ("brow-lamination-vs-microblading.html","0.7")]
     core = [("", "1.0"), ("services.html","0.9"), ("lash-extensions-yanchep.html","0.9"),
             ("lash-lift-yanchep.html","0.9"), ("brow-lamination-yanchep.html","0.9"),
             ("gallery.html","0.7"), ("contact.html","0.8"), ("aftercare.html","0.6"),
             ("about.html","0.6")]
-    urls = core[:5] + [("areas-we-serve.html","0.9")] + [w for w in written if w[0]!="areas-we-serve.html"] + core[5:]
+    urls = (core[:5] + [("areas-we-serve.html","0.9")] + guides
+            + [w for w in written if w[0]!="areas-we-serve.html"] + core[5:])
     seen, out = set(), []
     for u,p in urls:
         if u in seen: continue

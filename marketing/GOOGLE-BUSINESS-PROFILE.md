@@ -16,7 +16,19 @@ Choosing "no" makes it a **Service Area Business** — she still ranks locally, 
 address stays private and only the service areas show.
 
 **Service areas to add:**
-Yanchep · Two Rocks · Alkimos · Eglinton · Butler · Jindalee · Nowergup
+
+Google caps service areas at **20** and expects them to be realistic. Do not try to
+list all 62 suburbs the website covers — an over-broad service area dilutes relevance
+and is a known suppression trigger. Use exactly these 20, in this order:
+
+1. Yanchep      2. Eglinton     3. Two Rocks    4. Alkimos      5. Jindalee
+6. Nowergup     7. Butler       8. Merriwa      9. Ridgewood   10. Quinns Rocks
+11. Clarkson   12. Mindarie    13. Tamala Park 14. Banksia Grove 15. Carramar
+16. Kinross    17. Currambine  18. Burns Beach 19. Iluka       20. Joondalup
+
+The wider 40 km ring (Wanneroo, Hillarys, Duncraig, Karrinyup and the rest) is covered
+on the website at `/areas-we-serve.html`, which is the right place for it — organic
+pages can cover a broad area, a GBP service radius should not.
 
 ---
 
@@ -39,18 +51,30 @@ Competitors can report it in two clicks.
 
 ## 3. Description  (750 character limit)
 
-Luxe Beauty is a private lash and brow studio in Yanchep, Western Australia, offering
-classic, hybrid, volume and mega volume eyelash extensions, keratin lash lifts, lash
-tinting, brow lamination, brow henna, tinting and shaping.
+Final copy — 733/750 characters, checked against Google's content policy (no URLs, no
+prices, no promotional language, no all-caps). Paste as-is:
 
-Every set is mapped to your eye shape and the health of your natural lashes, so it
-flatters your features and grows out cleanly. One client at a time, in a calm private
-studio, with professional-grade products and single-use tools.
+```
+Luxe Beauty is a private lash and brow studio in Yanchep, Western Australia, offering classic, hybrid, volume and mega volume eyelash extensions, keratin lash lifts, lash tinting, brow lamination, brow henna, tinting and shaping.
 
-Serving Yanchep, Two Rocks, Alkimos, Eglinton and Butler. New clients welcome — patch
-tests available before your first appointment.
+Every set is mapped to your eye shape and the health of your natural lashes, so it suits your features and grows out cleanly. One client is booked at a time in a calm, private studio, with professional-grade products and single-use tools. You see the same technician every visit, and if a lighter set is better for your lashes, that is what you will be told.
 
----
+Serving Yanchep, Eglinton, Two Rocks, Alkimos, Jindalee and Butler. New clients welcome, with patch tests before a first appointment.
+```
+
+**Why it is ordered this way.** Only the first ~250 characters show before Google
+truncates with "more", so the opening line carries the location and the full service
+list. The differentiator (one client at a time, same technician, honest advice) sits in
+the middle, and the service areas close it out.
+
+**Do not add** a website URL, a phone number, prices or "book now" — Google's guidelines
+prohibit promotional content and links in the description, and they are a common cause
+of a description being rejected or silently stripped.
+
+**Note on expectations:** the description is *not* a ranking factor. Google ranks local
+results on categories, proximity and reviews. This copy is a conversion asset — it wins
+the click once you are already visible. The category field and review count are what
+make you visible.
 
 ## 4. Services (add each with its price)
 

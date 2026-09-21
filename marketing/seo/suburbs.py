@@ -340,3 +340,259 @@ TIER_B = [
  ("Pinjar","6078",20.9,"25"),("Gnangara","6077",32.7,"36"),("Muchea","6501",31.9,"34"),
  ("Bullsbrook","6084",38.1,"41"),
 ]
+
+# --- Tier A expansion: the 20-30 km band, high residential intent ---
+TIER_A += [
+{
+ "slug":"kinross","name":"Kinross","postcode":"6028","km":21.0,"mins":"23",
+ "route":"north on Connolly Drive onto Marmion Avenue","anchor":"Kinross College",
+ "hero":"photos/lash-1.jpg",
+ "intro":"Kinross is about twenty-three minutes from the studio, a straight run north on Connolly "
+   "Drive. It is a family suburb built around its schools, and appointments for Kinross clients are "
+   "very often booked around a school timetable rather than a work one.",
+ "angle":"The school run governs everything in Kinross, and a two-hour full set does not fit neatly "
+   "into it. Because the studio books one client at a time, start times are genuine rather than "
+   "approximate &mdash; if you are booked at 9:30 you begin at 9:30, which is the difference between "
+   "making pick-up and not.",
+ "local":"Kinross College sits at the centre of the suburb, and Connolly Drive north is the quickest "
+   "run out towards Yanchep outside the 8:30 and 3:00 crush.",
+ "faqs":[
+  ("How far is Kinross from the Yanchep studio?",
+   "About 21 kilometres, roughly twenty-three minutes via Connolly Drive and Marmion Avenue."),
+  ("Can I fit a full set in between school drop-off and pick-up?",
+   "A classic full set runs about two hours, and with the drive each way that is a comfortable fit "
+   "inside a 9am to 3pm window. Volume sets run closer to two and a half hours, so mention the "
+   "deadline when you book and the start time can be set to suit."),
+  ("Do appointments actually start on time?",
+   "Yes &mdash; only one client is booked at a time, so there is no queue to run late. If something "
+   "does run over, you get a message before you leave home rather than finding out in the waiting room."),
+ ],
+},
+{
+ "slug":"currambine","name":"Currambine","postcode":"6028","km":22.8,"mins":"25",
+ "route":"north on Marmion Avenue or the Mitchell Freeway to Burns Beach Road",
+ "anchor":"Currambine Central and the station","hero":"photos/lash-4.jpg",
+ "intro":"Currambine is roughly twenty-five minutes from the studio. Most clients come north on "
+   "Marmion Avenue, though the freeway to Burns Beach Road is quicker if you are starting from the "
+   "eastern side near the station.",
+ "angle":"Currambine is a commuter suburb, which means a lot of clients here are fitting beauty "
+   "appointments around a working week rather than a free weekday. Saturday appointments and early "
+   "starts exist for exactly that, and they book out first &mdash; usually two to three weeks ahead.",
+ "local":"Currambine Station and Currambine Central are the local anchors. If you are coming from the "
+   "station side, the freeway north then west on Burns Beach Road tends to beat Marmion Avenue.",
+ "faqs":[
+  ("How far is the studio from Currambine?",
+   "About 23 kilometres, or twenty-five minutes depending on whether you take Marmion Avenue or the "
+   "freeway up to Burns Beach Road."),
+  ("Do you do Saturday appointments?",
+   "Yes, Saturdays run 9am to 5pm and they are the busiest day of the week. For a Saturday slot it is "
+   "worth booking two to three weeks ahead, particularly for a full set."),
+  ("How far in advance should I book?",
+   "Weekdays usually have something inside a week. Saturdays and late afternoons go two to three weeks "
+   "out. Regulars book their next refill before they leave, which is the easiest way to hold a good time."),
+ ],
+},
+{
+ "slug":"joondalup","name":"Joondalup","postcode":"6027","km":25.3,"mins":"27",
+ "route":"north on Marmion Avenue or the Mitchell Freeway","anchor":"Lakeside Joondalup",
+ "hero":"photos/lash-5.jpg",
+ "intro":"Joondalup is about twenty-seven minutes south of the studio and is the commercial heart of "
+   "the northern corridor. It has more beauty salons than any other suburb on this list, so anyone "
+   "making this drive is doing it deliberately.",
+ "angle":"There is no argument that Joondalup is short of options &mdash; Lakeside alone has several. "
+   "What it is short of is appointments where nobody else is booked. Clients who make this trip "
+   "generally do so after a set they were not happy with: rushed mapping, a different technician each "
+   "visit, or lashes that came away in a fortnight. The pitch is not convenience, it is care.",
+ "local":"Lakeside Joondalup, the health campus and the ECU campus are the local landmarks. Marmion "
+   "Avenue and the freeway are both clean runs north outside peak.",
+ "faqs":[
+  ("Why travel from Joondalup when there are salons everywhere?",
+   "Convenience is not the reason to make this drive &mdash; the format is. One client at a time, the "
+   "same technician every visit, a real consultation, and the time a set actually needs rather than the "
+   "time a busy diary allows. If your local salon is working for you, stay there."),
+  ("How far is Yanchep from Joondalup?",
+   "About 25 kilometres, roughly twenty-seven minutes via Marmion Avenue or the Mitchell Freeway."),
+  ("My last set only lasted two weeks - what went wrong?",
+   "Usually one of three things: too much adhesive, extensions too heavy for the natural lash, or "
+   "poor isolation sticking lashes together so they shed in clumps. All three are application issues "
+   "rather than anything you did. Send a photo and you will get a straight answer about what happened."),
+ ],
+},
+{
+ "slug":"burns-beach","name":"Burns Beach","postcode":"6028","km":20.9,"mins":"23",
+ "route":"north on Marmion Avenue from Burns Beach Road","anchor":"the Burns Beach foreshore",
+ "hero":"photos/lash-3.jpg",
+ "intro":"Burns Beach is about twenty-three minutes from the studio, north on Marmion Avenue from the "
+   "Burns Beach Road turnoff. It is a small coastal community with very little in the way of local "
+   "services, which makes the run north a fairly normal thing to do.",
+ "angle":"Burns Beach is small enough that word of mouth does most of the work. Bookings from here "
+   "tend to arrive in clusters &mdash; one client, then two of her friends a fortnight later. That is "
+   "the way the studio prefers to grow, and it is why no money goes into advertising a discount.",
+ "local":"The foreshore and the cafe at the end of Ocean Parade are the usual reference points. "
+   "Burns Beach Road out to Marmion Avenue is the only sensible way north.",
+ "faqs":[
+  ("How far is Burns Beach from the studio?",
+   "About 21 kilometres, or twenty-three minutes via Burns Beach Road and Marmion Avenue."),
+  ("Do you offer a discount for referring a friend?",
+   "There is no formal referral scheme and no discount codes. Prices stay the same for everyone, which "
+   "is simpler and fairer than a system where the person who asks gets a better rate than the person who does not."),
+  ("Can two of us book together?",
+   "Not at the same time &mdash; the studio takes one client at a time and there is only one bed. "
+   "Back-to-back appointments work well though, and are a common request from Burns Beach and Iluka."),
+ ],
+},
+{
+ "slug":"iluka","name":"Iluka","postcode":"6028","km":21.9,"mins":"24",
+ "route":"north on Marmion Avenue","anchor":"Iluka Plaza and the foreshore",
+ "hero":"photos/brow-2.jpg",
+ "intro":"Iluka is roughly twenty-four minutes down the coast from the studio, a straightforward run "
+   "on Marmion Avenue. It is one of the more established coastal pockets in the area and its clients "
+   "tend to arrive with a very clear brief.",
+ "angle":"Iluka bookings skew heavily towards the natural end of the menu &mdash; classic sets, lash "
+   "lifts, brow lamination without a heavy tint. The request that comes up most is some version of "
+   "\u201cI want it to look like I slept well, not like I had something done\u201d, which is a harder "
+   "brief than a dramatic set and a more satisfying one to get right.",
+ "local":"Iluka Plaza and the foreshore park are the local landmarks; Marmion Avenue north is the "
+   "direct route.",
+ "faqs":[
+  ("How far is the studio from Iluka?",
+   "About 22 kilometres, roughly twenty-four minutes north on Marmion Avenue."),
+  ("Which set looks the most natural?",
+   "A classic set, one extension per natural lash, at a length close to your own. It reads as your "
+   "lashes on a good day rather than as extensions. If even that feels like too much, a lash lift and "
+   "tint changes nothing but the curl and colour of what you already have."),
+  ("Will people be able to tell?",
+   "Done properly, not really &mdash; the giveaway is almost always length or weight rather than the "
+   "extensions themselves. Mapping to your eye shape and staying within what your natural lashes can "
+   "carry is what keeps a set looking like yours."),
+ ],
+},
+{
+ "slug":"connolly","name":"Connolly","postcode":"6027","km":23.3,"mins":"25",
+ "route":"north on Marmion Avenue via Shenton Avenue","anchor":"the Joondalup Resort golf course",
+ "hero":"photos/brow-1.jpg",
+ "intro":"Connolly is about twenty-five minutes from the studio, out via Shenton Avenue and north on "
+   "Marmion Avenue. It is a quiet, established suburb built around the golf course, and its client "
+   "list here is almost entirely long-term regulars.",
+ "angle":"Connolly clients tend to have been coming for a while, and that changes the appointment. "
+   "When the same technician has watched your natural lashes through a year of refills, the "
+   "conversation stops being about what you want today and starts being about what your lashes can "
+   "carry this cycle. That continuity is the whole argument for a one-person studio.",
+ "local":"The Joondalup Resort golf course sits at the centre of Connolly, and Shenton Avenue out to "
+   "Marmion Avenue is the usual route north.",
+ "faqs":[
+  ("How far is Connolly from the Yanchep studio?",
+   "About 23 kilometres, or twenty-five minutes via Shenton Avenue and Marmion Avenue."),
+  ("Will I always have the same technician?",
+   "Yes. It is a one-person studio, so every set, refill and consultation is done by the same person. "
+   "Nothing gets handed over and nothing has to be re-explained."),
+  ("Do my lashes need a break from extensions?",
+   "Sometimes, and you will be told when. Healthy natural lashes can carry extensions indefinitely "
+   "with proper application and regular refills, but if there is visible thinning or stress the honest "
+   "advice is a few weeks off, or a lift instead. A set applied over damaged lashes helps nobody."),
+ ],
+},
+{
+ "slug":"ocean-reef","name":"Ocean Reef","postcode":"6027","km":25.2,"mins":"27",
+ "route":"north on Marmion Avenue","anchor":"the Ocean Reef boat harbour",
+ "hero":"photos/lash-2.jpg",
+ "intro":"Ocean Reef is about twenty-seven minutes from the studio, north along Marmion Avenue. It is "
+   "a boating suburb built around the harbour, and a good share of its clients spend serious time on "
+   "or in the water &mdash; which genuinely changes what should be recommended.",
+ "angle":"Salt, wind and sun are the three things that shorten the life of a set, and Ocean Reef "
+   "clients get all three. That does not rule extensions out, but it does mean a lighter, "
+   "better-isolated set with a retention-focused adhesive will outperform a heavy one, and that a "
+   "two-week refill cycle beats a three-week one.",
+ "local":"The boat harbour and marina development are the local anchors, with Marmion Avenue the "
+   "direct run north.",
+ "faqs":[
+  ("How far is Ocean Reef from the studio?",
+   "About 25 kilometres, roughly twenty-seven minutes north on Marmion Avenue."),
+  ("Do extensions survive being on a boat every weekend?",
+   "They do, with a shorter refill cycle. Salt spray and wind loosen adhesive faster than ordinary "
+   "wear, so expect two-week refills rather than three. Rinse with fresh water after a day out and "
+   "brush them through once dry."),
+  ("Would a lash lift be a better option?",
+   "For heavy water users, often yes. A lift restructures your own lashes so there is no adhesive to "
+   "break down &mdash; six to eight weeks, no refills, and nothing that can be pulled out by a towel "
+   "or a wetsuit hood."),
+ ],
+},
+{
+ "slug":"mullaloo","name":"Mullaloo","postcode":"6027","km":27.6,"mins":"30",
+ "route":"north on Marmion Avenue","anchor":"Mullaloo Beach and the surf club",
+ "hero":"photos/lash-1.jpg",
+ "intro":"Mullaloo is about thirty minutes from the studio on Marmion Avenue. It is one of the most "
+   "swum-at beaches in the northern suburbs, and that shows up in what Mullaloo clients end up booking.",
+ "angle":"More Mullaloo enquiries end in a lash lift than in extensions, and that is the right outcome "
+   "rather than a lost sale. If you are in the water most days, a lift gives you six to eight weeks "
+   "with nothing to maintain and nothing to lose, where a set of extensions would be asking for a "
+   "fortnightly refill and a lot of driving.",
+ "local":"Mullaloo Beach, the surf club and Tom Simpson Park are the local landmarks; Marmion Avenue "
+   "runs the whole way north.",
+ "faqs":[
+  ("How far is the studio from Mullaloo?",
+   "About 28 kilometres, or thirty minutes north on Marmion Avenue. It is towards the outer edge of "
+   "the regular catchment."),
+  ("Is it worth a thirty minute drive for a lash lift?",
+   "A lift lasts six to eight weeks with no refills, so it is one trip per cycle rather than a "
+   "fortnightly commitment. For swimmers coming from Mullaloo that maths usually works; a set of "
+   "extensions needing refills every two weeks generally does not."),
+  ("Can I swim after a lash lift?",
+   "Keep them dry for the first 24 hours while the lift sets. After that there are no restrictions at "
+   "all &mdash; swim, surf, shower, no special products required."),
+ ],
+},
+{
+ "slug":"tapping","name":"Tapping","postcode":"6065","km":23.8,"mins":"26",
+ "route":"north on Wanneroo Road then west on Flynn Drive","anchor":"Tapping Primary",
+ "hero":"photos/brow-3.jpg",
+ "intro":"Tapping is about twenty-six minutes from the studio, north on Wanneroo Road and across on "
+   "Flynn Drive. It is a young family suburb, and a noticeable share of first-time lash clients come "
+   "from this pocket.",
+ "angle":"A lot of Tapping bookings are somebody's first set, and first sets need a different "
+   "conversation: what a patch test is for, how much is too much, what it will look like growing out, "
+   "and what it costs to maintain honestly. Nobody should leave a first appointment surprised by the "
+   "refill schedule.",
+ "local":"Tapping Primary and Wanneroo Road are the local anchors, with Flynn Drive the fastest link "
+   "west to the coast road.",
+ "faqs":[
+  ("How far is Tapping from the Yanchep studio?",
+   "About 24 kilometres, roughly twenty-six minutes via Wanneroo Road and Flynn Drive."),
+  ("I have never had lashes before - where do I start?",
+   "With a patch test 48 hours ahead and a classic set. Classic is the most natural and the easiest to "
+   "live with, and you can always go heavier next time. Starting with mega volume is the most common "
+   "first-set regret."),
+  ("What does it actually cost to maintain?",
+   "A classic full set is $120, then refills every two to three weeks at $60 or $75. Budget roughly "
+   "$120 to $150 a month to keep a set going. If that does not suit, a lash lift at $75 every six to "
+   "eight weeks is the lower-commitment option and there is no shame in choosing it."),
+ ],
+},
+{
+ "slug":"wanneroo","name":"Wanneroo","postcode":"6065","km":27.7,"mins":"30",
+ "route":"north on Wanneroo Road then west on Flynn Drive",
+ "anchor":"the Wanneroo town centre","hero":"photos/brow-2.jpg",
+ "intro":"Wanneroo is about thirty minutes from the studio, north on Wanneroo Road then west on Flynn "
+   "Drive. It is the oldest settlement in this part of Perth and has a settled, generational community "
+   "&mdash; which is reflected in how bookings from there arrive.",
+ "angle":"Almost every Wanneroo client came from another Wanneroo client. There is no advertising "
+   "budget aimed at the suburb and no introductory offer; the work travels by recommendation, which "
+   "means the standard has to hold up to being talked about. That is a better accountability mechanism "
+   "than any discount.",
+ "local":"The Wanneroo town centre, showgrounds and botanic gardens are the local landmarks. Flynn "
+   "Drive is the quickest way across to Marmion Avenue and north.",
+ "faqs":[
+  ("How far is Wanneroo from the studio?",
+   "About 28 kilometres, or thirty minutes via Wanneroo Road and Flynn Drive. It sits near the outer "
+   "edge of the usual catchment."),
+  ("Is it worth coming this far?",
+   "For a full set or a combination appointment, most Wanneroo clients say yes &mdash; and nearly all "
+   "of them came on somebody else's recommendation rather than an ad. For a single brow tint it is "
+   "hard to justify the drive, and you will be told so."),
+  ("Can I book lashes and brows together to make one trip?",
+   "Yes, and it is recommended at this distance. A lash lift and tint with brow lamination and tint is "
+   "$160 together rather than $175 separately, and runs about two hours in a single sitting."),
+ ],
+},
+]

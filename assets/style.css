@@ -370,3 +370,23 @@ details.faq p{color:var(--fg-dim); margin:0 0 22px; font-size:15px; max-width:70
   .scroll-cue i{animation:none}
   .shot figcaption{transform:none; opacity:1}
 }
+
+/* ---------- comparison table (guide pages) ----------
+   Themed off the section vars so it inverts correctly inside section.light,
+   exactly like .menu and .card do. */
+.ctable{max-width:860px; margin:0 auto; overflow-x:auto; -webkit-overflow-scrolling:touch}
+.ctable table{width:100%; border-collapse:collapse; font-size:14.5px; min-width:520px}
+.ctable th,.ctable td{text-align:left; padding:15px 16px; border-bottom:1px solid var(--hair);
+  vertical-align:top; color:var(--fg-dim)}
+.ctable thead th{font-size:10px; letter-spacing:.26em; text-transform:uppercase; color:var(--accent);
+  font-weight:400; border-bottom:1px solid var(--hair-accent); white-space:nowrap}
+.ctable tbody th{font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent);
+  font-weight:400; white-space:nowrap}
+.ctable tbody tr:last-child th,.ctable tbody tr:last-child td{border-bottom:0}
+.ctable td b{color:var(--fg); font-weight:400}
+
+/* guide prose */
+.prose{max-width:760px; margin:0 auto}
+.prose p{color:var(--fg-dim); font-size:15.5px; line-height:1.72; margin:0 0 18px}
+.prose p b{color:var(--fg); font-weight:400}
+.prose h3{margin:0 0 14px}
