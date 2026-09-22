@@ -278,7 +278,7 @@ def build_hub():
       "openingHoursSpecification":[{"@type":"OpeningHoursSpecification",
         "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
         "opens":"09:00","closes":"17:00"}],
-      "sameAs":["https://www.instagram.com/luxebeautyyanchep/"]}
+      "sameAs":["https://www.instagram.com/luxebeautyyanchep/","https://www.facebook.com/luxebeautyyanchep"]}
     crumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE+"/"},
       {"@type":"ListItem","position":2,"name":"Areas We Serve","item":"%s/%s"%(SITE,slug)}]}
