@@ -1,0 +1,109 @@
+LUXE BEAUTY YANCHEP - FACEBOOK PAGE
+Plain text. Copy straight from here.
+
+Page: LUXE Beauty Yanchep | Perth WA
+
+WHY THIS MATTERS
+Ocean Beauty Yanchep's FACEBOOK PAGE ranks #4 for "lash extensions
+Yanchep" - above most real websites - with 5.0 stars and 22 reviews
+showing in the result.
+
+Their page name is brand-only, same as yours. What Google pulled into
+their search snippet was their ABOUT text:
+  "LASH LIFT/KOREAN LASH LIFT SPECIALIST BROWS COSMETIC TATTOOING..."
+
+So the About field is the lever, not the page name.
+Do NOT rename the page to add keywords - Facebook's naming rules
+prohibit it and pages get flagged.
+
+
+=============================================================
+1. SHORT BIO / DESCRIPTION  (255 character limit - this is 214)
+=============================================================
+
+Lash extensions, lash lifts and brow lamination in Yanchep, WA. Classic, hybrid, volume and mega volume sets from $120. Private studio, one client at a time. Serving Yanchep, Eglinton, Two Rocks, Alkimos and Butler.
+
+
+=============================================================
+2. LONGER "ABOUT" / ADDITIONAL INFO
+=============================================================
+
+Luxe Beauty is a private lash and brow studio in Yanchep, Western Australia.
+
+Services: classic, hybrid, volume and mega volume eyelash extensions, keratin lash lifts, lash tinting, brow lamination, brow henna, brow tinting and shaping.
+
+Every set is mapped to your eye shape and the health of your natural lashes, so it suits your features and grows out cleanly. One client is booked at a time, using professional-grade products and single-use tools. You see the same technician every visit.
+
+Classic full set $120 | Hybrid $140 | Volume $160 | Mega volume $180
+Lash lift and tint $90 | Brow lamination and tint $85
+Refills from $60
+
+Serving Yanchep, Eglinton, Two Rocks, Alkimos, Jindalee, Butler, Merriwa, Quinns Rocks, Clarkson, Mindarie and the northern corridor.
+
+Patch tests available before your first appointment. New clients welcome.
+
+
+=============================================================
+3. TURN ON RECOMMENDATIONS  (this is the important one)
+=============================================================
+
+If Reviews/Recommendations are not enabled, you cannot collect the star
+rating that shows in Google results. Ocean Beauty has 22. You have none.
+
+On the Page:
+  Settings -> Privacy -> Page and tagging
+  (or Settings -> Templates and Tabs -> turn ON the Reviews tab)
+
+Check it is on by viewing your own page - you should see a
+"Reviews" or "Recommendations" tab.
+
+Then ask every happy client for BOTH:
+  - a Google review (once the GBP postcard arrives)
+  - a Facebook recommendation
+
+Same ask, same evening, two links.
+
+
+=============================================================
+4. FIELDS TO FILL IN
+=============================================================
+
+Category:   Beauty Salon  (add Eyelash Service if offered)
+Website:    https://luxebeautyyanchep.com
+Phone:      0411 487 177
+Hours:      Monday to Saturday 9:00am - 5:00pm, Sunday closed
+Location:   Yanchep WA 6035 - do NOT publish the street address,
+            set it as a service area the same way as the Google profile
+Button:     "Book Now" -> https://luxebeautyyanchep.com
+
+
+=============================================================
+5. CONTENT
+=============================================================
+
+Cross-post the Instagram calendar (marketing/INSTAGRAM-4-WEEKS.txt).
+You can link Instagram to the Page so posts publish to both at once:
+  Instagram -> Settings -> Sharing to other apps -> Facebook
+
+Facebook's audience in Yanchep skews slightly older than Instagram's and
+converts well for beauty services. Local community groups are worth
+joining as the Page - participate genuinely, do not spam.
+
+
+=============================================================
+6. STILL NEEDED FROM YOU
+=============================================================
+
+The canonical Page URL, so it can be added to the website's schema as a
+verified brand signal (this ties the site, Instagram and Facebook together
+as one entity for Google).
+
+The share link you sent (facebook.com/share/1GcvYviePj/) is a shortlink
+and may not be permanent.
+
+To find it: open the Page in a web browser (not the app) and copy the
+address bar. It looks like:
+  facebook.com/luxebeautyyanchep
+  or facebook.com/profile.php?id=61...
+
+Send that and it goes straight into the site's structured data.
