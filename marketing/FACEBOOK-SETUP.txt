@@ -18,6 +18,48 @@ prohibit it and pages get flagged.
 
 
 =============================================================
+0. READ FIRST - THIS PAGE WAS THE OLD PHOTOGRAPHY PAGE
+=============================================================
+
+facebook.com/luxebeautyyanchep is a rebrand of Jesse's old photography
+page. It carries 7 existing reviews from that business.
+
+DECISION (2026-09-22): keep the page and dilute the old reviews with
+lash ones. You keep the star rating, the page age and the branded URL.
+Facebook shows previous page names under Page Transparency anyway, so
+nothing is being hidden - it is a genuine rebrand of your own page.
+
+You CANNOT delete individual Facebook reviews. Turning Recommendations
+off hides all of them, including future lash ones. So dilution is the
+only path that keeps a star rating.
+
+Reviews surface newest-first. Roughly 10 lash recommendations pushes the
+photography ones off the visible list within about a month. Until then,
+a curious visitor may see photography reviews - accepted tradeoff.
+
+### THE JOBS THAT MATTER MOST ON THIS PAGE
+
+1. CHANGE THE CATEGORY. If it is still a Photography category, the page
+   is telling Facebook and Google it is a photography business. That
+   actively works against ranking for "lash extensions Yanchep" and is
+   more damaging than the old reviews.
+   Set to: Beauty Salon  (add Eyelash Service if available)
+
+2. REPLACE PROFILE + COVER IMAGES with the LB branding. Profile photo:
+   icons/icon-512.png from the website repo (the LB monogram).
+
+3. HIDE OR DELETE THE OLD PHOTOGRAPHY POSTS. A lash page full of wedding
+   photos dilutes relevance and confuses visitors far more than the
+   reviews do. Deleting is cleaner than hiding.
+
+4. UPDATE THE ABOUT TEXT (section 1 and 2 below).
+
+5. START COLLECTING LASH REVIEWS IMMEDIATELY. This is the only thing
+   that fixes the review mismatch permanently, and Facebook reviews do
+   NOT require the Google postcard - you can start today.
+
+
+=============================================================
 1. SHORT BIO / DESCRIPTION  (255 character limit - this is 214)
 =============================================================
 
