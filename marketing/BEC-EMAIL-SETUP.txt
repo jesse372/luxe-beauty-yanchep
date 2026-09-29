@@ -1,31 +1,43 @@
 YOUR NEW EMAIL: bec@luxebeautyyanchep.com
 
 
-EASIEST WAY - no setup at all
------------------------------
-Go to:  privateemail.com
-Log in with your email address and password.
-That's your inbox. Add it to your home screen
-and it works like an app.
+SET IT UP ON YOUR PHONE (2 minutes)
+-----------------------------------
 
-Done. You can stop reading.
+1. Open your browser and go to:  privateemail.com
+
+2. Log in:
+     Email:     bec@luxebeautyyanchep.com
+     Password:  the one Jesse texted you
+
+3. That's your inbox - you can read and send straight away.
 
 
-ONLY IF YOU WANT IT IN OUTLOOK
-------------------------------
-Outlook > Settings > Add Mail Account
+MAKE IT AN APP ICON
+-------------------
 
-Type:      bec@luxebeautyyanchep.com
-Choose:    IMAP
-Password:  yours
+So you don't have to log in every time:
 
-Turn on "Advanced Settings", then:
+ANDROID
+  Tap the 3 dots in the top right of Chrome
+  Tap "Add to Home screen"
+  Tap Add
 
-  Both servers:   mail.privateemail.com
-  Both usernames: bec@luxebeautyyanchep.com
-  Incoming port:  993
-  Outgoing port:  465
+IPHONE
+  Tap the Share button at the bottom of Safari
+  Scroll and tap "Add to Home Screen"
+  Tap Add
 
-Tap done.
+You'll get an icon on your home screen that opens
+straight to your inbox, just like a normal app.
 
-Won't connect? Change outgoing port to 587.
+
+THAT'S IT
+---------
+
+Jesse will set it up properly in Outlook when he's home
+if you want it there too - but you don't need to wait,
+this works completely on its own.
+
+Any email a client sends to bec@luxebeautyyanchep.com
+will land here.
