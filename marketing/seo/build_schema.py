@@ -61,6 +61,7 @@ def business_node():
                         "volume and mega volume eyelash extensions, keratin lash lifts, lash tinting, "
                         "brow lamination, henna, tinting and shaping. One client at a time."),
         "telephone": PHONE,
+        "email": "bec@luxebeautyyanchep.com",
         "priceRange": "$$",
         "currenciesAccepted": "AUD",
         "paymentAccepted": "Cash, EFTPOS, Credit Card",
@@ -130,6 +131,7 @@ def write_llms():
     A("- Type: private home studio (service-area business, by appointment only)")
     A("- Location: Yanchep, Western Australia 6035, Australia")
     A("- Phone: 0411 487 177")
+    A("- Email: bec@luxebeautyyanchep.com")
     A("- Website: %s" % SITE)
     A("- Hours: Monday to Saturday, 9:00am-5:00pm. Closed Sunday.")
     A("- Booking: by appointment; patch test required 48 hours before a first appointment")

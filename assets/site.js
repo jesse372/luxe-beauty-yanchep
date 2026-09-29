@@ -11,8 +11,7 @@ const BOOKING_URL = "https://squareup.com/appointments/book/Q0QM7TJZ6949G";
 
 const CONTACT = {
   instagram: "https://www.instagram.com/luxebeautyyanchep/",
-  email:     "",          // waiting on a Luxe-branded address; the old
-                          // blushbeautyparlour@outlook.com is off-brand now
+  email:     "bec@luxebeautyyanchep.com",   // Namecheap Private Email mailbox
   phone:     "0411 487 177"
 };
 
