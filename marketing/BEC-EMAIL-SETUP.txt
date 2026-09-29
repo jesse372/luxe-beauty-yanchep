@@ -1,0 +1,130 @@
+===============================================
+  SETTING UP YOUR NEW EMAIL ON OUTLOOK
+  bec@luxebeautyyanchep.com
+===============================================
+
+This takes about 5 minutes.
+
+You'll need your email password - the one that was set up
+when the mailbox was created. Have it ready before you start.
+
+
+-----------------------------------------------
+  THE ONLY 4 THINGS YOU'LL NEED TO TYPE
+-----------------------------------------------
+
+Keep this bit handy - you'll be asked for these:
+
+  Email address:  bec@luxebeautyyanchep.com
+
+  Password:       (your mailbox password)
+
+  Server:         mail.privateemail.com
+                  (this is the answer to BOTH server
+                   questions - incoming and outgoing)
+
+  Username:       bec@luxebeautyyanchep.com
+                  (the WHOLE email address, not just "bec")
+
+That last one catches most people out. If it asks for a
+username, always type the full email address.
+
+
+-----------------------------------------------
+  STEP BY STEP  (Outlook app on your phone)
+-----------------------------------------------
+
+1. Open the Outlook app.
+
+2. Tap your picture or the menu icon in the top left,
+   then tap the gear/settings icon at the bottom.
+
+3. Tap "Add Mail Account", then "Add Email Account".
+
+4. Type:  bec@luxebeautyyanchep.com
+   Tap Continue.
+
+5. Outlook will try to work it out itself and won't manage
+   it. That's normal and expected - nothing has gone wrong.
+
+   When it asks you to choose an account type, tap "IMAP".
+
+6. Type your password in the password box.
+
+7. Look for "Advanced Settings" and turn it ON.
+   You should now see boxes for server names.
+
+8. Fill them in:
+
+   INCOMING MAIL
+     Server / Hostname:  mail.privateemail.com
+     Port:               993
+     Security type:      SSL/TLS
+     Username:           bec@luxebeautyyanchep.com
+     Password:           your password
+
+   OUTGOING MAIL
+     Server / Hostname:  mail.privateemail.com
+     Port:               465
+     Security type:      SSL/TLS
+     Username:           bec@luxebeautyyanchep.com
+     Password:           your password
+
+9. Tap the tick / Sign In / Done.
+
+That's it. Your email should start loading.
+
+
+-----------------------------------------------
+  IF IT WON'T CONNECT
+-----------------------------------------------
+
+Try ONE change first:
+
+  Change the OUTGOING port from 465 to 587
+  and set security to STARTTLS instead of SSL/TLS
+
+That fixes it almost every time.
+
+Still stuck? Check these three things:
+
+  - Username is the FULL email address
+    (bec@luxebeautyyanchep.com, not just "bec")
+
+  - Server is spelled exactly: mail.privateemail.com
+    (no "www", no ".com.au")
+
+  - Password is correct - try logging in at
+    privateemail.com in your browser to check it
+
+
+-----------------------------------------------
+  IF YOU'D RATHER NOT BOTHER WITH THE APP
+-----------------------------------------------
+
+You don't have to use Outlook at all.
+
+Go to:  privateemail.com
+
+Log in with your email address and password and you have
+your full inbox in the browser - nothing to set up, works
+on your phone and your laptop, and you can send from
+bec@luxebeautyyanchep.com straight away.
+
+Add it to your phone's home screen and it behaves almost
+exactly like an app.
+
+The Outlook setup is only worth doing if you prefer having
+all your email in one place.
+
+
+-----------------------------------------------
+  TEST IT WHEN YOU'RE DONE
+-----------------------------------------------
+
+Send an email from bec@luxebeautyyanchep.com to your
+personal address, and check it arrives and shows as coming
+FROM bec@luxebeautyyanchep.com.
+
+That's the bit that matters - clients should always see
+your business address, never a personal one.
