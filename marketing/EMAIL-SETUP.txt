@@ -1,0 +1,129 @@
+LUXE BEAUTY YANCHEP - EMAIL SETUP
+bec@luxebeautyyanchep.com  via Namecheap Private Email
+
+Plain text. Copy straight from here.
+
+
+=============================================================
+CURRENT STATE (before you start)
+=============================================================
+
+The domain currently uses Namecheap FREE EMAIL FORWARDING:
+  MX  -> eforward1-5.registrar-servers.com
+  SPF -> v=spf1 include:spf.efwd.registrar-servers.com ~all
+
+Forwarding is RECEIVE ONLY. It cannot send. That is why we are
+moving to Private Email.
+
+No email address is published on the website yet, so nothing
+breaks when the MX records change.
+
+
+=============================================================
+STEP 1 - BUY PRIVATE EMAIL
+=============================================================
+
+Namecheap -> Private Email -> choose the Starter plan
+(1 mailbox is enough - around $11-14 AUD per year)
+
+Link it to: luxebeautyyanchep.com
+
+
+=============================================================
+STEP 2 - LET NAMECHEAP AUTO-CONFIGURE THE MX RECORDS
+=============================================================
+
+Namecheap will offer to set the MX records automatically.
+ACCEPT IT. It replaces the forwarding MX with:
+
+  mx1.privateemail.com   priority 10
+  mx2.privateemail.com   priority 10
+
+This REPLACES email forwarding. That is expected and correct.
+
+
+=============================================================
+STEP 3 - FIX THE SPF RECORD  (easy to miss, breaks sending)
+=============================================================
+
+The SPF record still points at the OLD forwarding service. If it
+is not updated, mail sent from bec@ may fail SPF checks and land
+in spam.
+
+In Advanced DNS, find the TXT record with this value:
+
+  v=spf1 include:spf.efwd.registrar-servers.com ~all
+
+CHANGE its value to:
+
+  v=spf1 include:spf.privateemail.com ~all
+
+*** DO NOT TOUCH THE OTHER TXT RECORD ***
+There is a second TXT record starting with:
+  google-site-verification=8o_JfYe62lO8SnI0ap7NtO59ed4rQP8klUbdnXrVRac
+That one is the Google Search Console verification. Deleting it
+un-verifies the site. Leave it exactly as it is.
+
+
+=============================================================
+STEP 4 - ENABLE DKIM
+=============================================================
+
+Private Email dashboard -> the mailbox -> enable DKIM.
+Namecheap adds the DNS record for you.
+
+DKIM + correct SPF is what keeps appointment emails out of spam.
+Worth doing - it is two clicks.
+
+
+=============================================================
+STEP 5 - CREATE THE MAILBOX
+=============================================================
+
+Mailbox: bec@luxebeautyyanchep.com
+Set a strong password and save it in your password manager.
+
+
+=============================================================
+STEP 6 - ADD IT TO OUTLOOK
+=============================================================
+
+In the Outlook app, add an account, choose IMAP, then enter these
+manually (Outlook will not auto-detect a Namecheap mailbox):
+
+INCOMING (IMAP)
+  Server:    mail.privateemail.com
+  Port:      993
+  Security:  SSL/TLS
+  Username:  bec@luxebeautyyanchep.com
+  Password:  (the mailbox password)
+
+OUTGOING (SMTP)
+  Server:    mail.privateemail.com
+  Port:      465
+  Security:  SSL/TLS
+  Username:  bec@luxebeautyyanchep.com
+  Password:  (the mailbox password)
+  Authentication required: YES
+
+If port 465 is rejected, use port 587 with STARTTLS instead.
+
+Webmail (works anywhere, no setup):
+  https://privateemail.com
+
+
+=============================================================
+STEP 7 - TELL ME WHEN IT RECEIVES MAIL
+=============================================================
+
+Send a test from another address to bec@luxebeautyyanchep.com and
+confirm it arrives.
+
+Then I will:
+  - publish it on all 36 pages of the website (the contact links
+    are currently HIDDEN because no address is set)
+  - add it to the LocalBusiness schema
+  - add it to the Google Business Profile and Facebook page
+
+The address is deliberately NOT on the site yet. Publishing an
+address that bounces is worse than publishing none.
