@@ -105,8 +105,8 @@ TIER_A = [
    "Jindalee itself is almost entirely residential with no beauty strip. The closest studio is in "
    "Yanchep, about ten kilometres and eleven minutes north on Marmion Avenue."),
   ("Do you do brows as well as lashes for Jindalee clients?",
-   "Yes &mdash; brow shaping and tinting are both available, and combining brows "
-   "with a lash appointment saves a second trip. There is a combination price for exactly that reason."),
+   "Yes &mdash; brow shaping and tinting are add-ons to any lash set or refill, so one "
+   "trip covers both."),
   ("Can I book lashes and brows in the same visit?",
    "Yes, and it is the most common request from further-out suburbs. A brow shape and tint with a lash "
    "tint runs about 45 minutes together and is priced as a combination rather than two separate services."),
@@ -197,16 +197,17 @@ TIER_A = [
  "intro":"Ridgewood is roughly seventeen minutes from the studio via Connolly Drive and Marmion Avenue. "
    "It sits just inland of the coast between Merriwa and Clarkson, and the drive north is one of the "
    "simpler ones in the corridor &mdash; two roads, no freeway.",
- "angle":"A lot of Ridgewood enquiries start with brows rather than lashes. A brow shape and tint takes "
-   "about half an hour, is mapped to your face rather than a stencil, and is an easy first appointment "
-   "before committing to a full set of lashes.",
+ "angle":"A lot of Ridgewood enquiries start with brows rather than lashes. Brow shaping and tinting "
+   "are done here as add-ons to a lash appointment, or together with a lash tint as a 45-minute "
+   "package, and always mapped to your face rather than a stencil.",
  "local":"Ridgewood Park is the usual local landmark, and from there it is a straight run north to Yanchep.",
  "faqs":[
   ("How far is the studio from Ridgewood?",
    "About 15 kilometres, or seventeen minutes via Connolly Drive and Marmion Avenue."),
   ("What brow treatments do you offer?",
-   "Brow shaping &mdash; a wax and tweeze mapped to your features &mdash; is $25, or $40 with a tint. "
-   "A brow shape and tint with a lash tint is $60 as a package."),
+   "Brow shaping &mdash; a wax and tweeze mapped to your features &mdash; is $25, or $40 with a tint, "
+   "as an add-on to any lash set or refill. Booked without lashes, a brow shape and tint with a lash "
+   "tint is $60 as a package."),
   ("Do I need a patch test first?",
    "For anything involving tint or lash adhesive, a patch test is recommended before your first "
    "appointment &mdash; ideally 48 hours ahead. For Ridgewood clients it is usually worth combining the "
@@ -283,7 +284,7 @@ TIER_A = [
   ("How far is Banksia Grove from the Yanchep studio?",
    "About 22 kilometres, roughly twenty-three minutes via Wanneroo Road and Flynn Drive."),
   ("Is it worth the drive from an inland suburb?",
-   "It depends on what you book. For a single brow tint, probably not. For a full set, a lash and "
+   "For a full set, a lash and "
    "brow combination, or a standing refill with a technician you trust, Banksia Grove clients "
    "generally say yes &mdash; and tend to book combinations to make one trip do the work of two."),
   ("Can I combine lashes and brows to save a trip?",
@@ -460,7 +461,8 @@ TIER_A += [
   ("Which set looks the most natural?",
    "A classic set, one extension per natural lash, at a length close to your own. It reads as your "
    "lashes on a good day rather than as extensions. If even that feels like too much, a lash "
-   "tint changes nothing but the colour of what you already have."),
+   "tint, booked with a brow shape and tint as a package, changes nothing but the colour of what you "
+   "already have."),
   ("Will people be able to tell?",
    "Done properly, not really &mdash; the giveaway is almost always length or weight rather than the "
    "extensions themselves. Mapping to your eye shape and staying within what your natural lashes can "
@@ -588,8 +590,7 @@ TIER_A += [
    "edge of the usual catchment."),
   ("Is it worth coming this far?",
    "For a full set or a combination appointment, most Wanneroo clients say yes &mdash; and nearly all "
-   "of them came on somebody else's recommendation rather than an ad. For a single brow tint it is "
-   "hard to justify the drive, and you will be told so."),
+   "of them came on somebody else's recommendation rather than an ad."),
   ("Can I book lashes and brows together to make one trip?",
    "Yes, and it is recommended at this distance. A brow shape and tint with a lash tint is "
    "$60 together rather than $65 separately, and takes about 45 minutes in a single sitting."),

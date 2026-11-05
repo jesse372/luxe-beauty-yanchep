@@ -79,8 +79,8 @@ PRICING = """    <div class="menu rv">
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Lightweight fans for density and softness.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density, still weightless.</span><span class="price">$180</span></div>
       <div class="row"><span class="name">Lash Refills</span><span class="desc">Two and three week refills for every style, priced in proportion to the set. <a href="services.html">Full list</a>.</span><span class="price">from $60</span></div>
-      <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Shaped and tinted for depth and definition.</span><span class="price">$40</span></div>
-      <div class="row"><span class="name">Brow Shape &amp; Tint + Lash Tint</span><span class="desc">A quick refresh before an event. Save $5.</span><span class="price">$60</span></div>
+      <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Add-on to any lash set or refill.</span><span class="price">$40</span></div>
+      <div class="row"><span class="name">Brow Shape &amp; Tint + Lash Tint</span><span class="desc">Bookable on its own. Save $5.</span><span class="price">$60</span></div>
     </div>"""
 
 def head(title, desc, slug, hero_img, extra_ld):
@@ -215,7 +215,7 @@ def build_suburb(s, idx):
         <p>Two and three week refills for classic, hybrid, volume and mega volume sets, and refills of
         another artist&rsquo;s work. <a href="services.html">Full details &amp; pricing</a>.</p></div>
       <div class="card"><span class="num">03</span><h3>Brows &amp; tinting</h3>
-        <p>Brow shaping mapped to your face, brow tint and lash tint, on their own or as a package.
+        <p>Brow shaping, brow tint and lash tint, added to a lash appointment or booked together as a package.
         <a href="services.html">Full details &amp; pricing</a>.</p></div>
     </div>
 
@@ -335,9 +335,9 @@ def build_hub():
     </div>
     <div class="grid g3 rv">
       <div class="card"><span class="num">01</span><h3>Combine treatments</h3>
-        <p>A brow shape and tint with a lash tint is $60 together rather than $65 separately, and
-        takes about 45 minutes in one sitting. If you are travelling for a full set, ask about adding
-        brows to the same visit rather than driving twice.</p></div>
+        <p>Brow shaping, brow tint and lash tint are add-ons to a lash set or refill, so one visit
+        covers both. Booked without lashes, a brow shape and tint with a lash tint is $60 as a
+        package, about 45 minutes.</p></div>
       <div class="card"><span class="num">02</span><h3>Plan the patch test</h3>
         <p>Anything involving tint or lash adhesive needs a patch test about 48 hours before your first
         appointment. If you are coming a distance, tie it to another trip rather than driving twice.</p></div>

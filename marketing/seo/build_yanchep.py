@@ -256,7 +256,7 @@ PRICING_YANCHEP = """
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Handmade fans for a fluffy, fuller, camera-ready look.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density and drama, still lightweight on the lash.</span><span class="price">$180</span></div>
 """ + prices.refill_rows() + """
-      <div class="row"><span class="name">Lash Removal</span><span class="desc">Safe, gentle removal with no damage to your natural lashes.</span><span class="price">$25</span></div>
+      <div class="row"><span class="name">Lash Removal</span><span class="desc">Safe, gentle removal before a new set. Add-on to a full set or refill.</span><span class="price">$25</span></div>
     </div>"""
 
 if __name__ == "__main__":

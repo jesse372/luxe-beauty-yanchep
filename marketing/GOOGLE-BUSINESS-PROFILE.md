@@ -83,7 +83,6 @@ make you visible.
 - Hybrid Full Set — $140
 - Volume Full Set — $160
 - Mega Volume Full Set — $180
-- Lash Removal — $25
 
 **Lash Refills** (two week / three week / foreign)
 - Classic — $60 / $75 / $85
@@ -91,10 +90,13 @@ make you visible.
 - Volume — $80 / $100 / $115
 - Mega Volume — $90 / $115 / $130
 
-**Brows & Tinting**
+**Add-ons** (only with a lash set or refill)
+- Lash Removal — $25
+- Lash Tint — $25
 - Brow Shape — $25
 - Brow Shape & Tint — $40
-- Lash Tint — $25
+
+**Brow & Tint Package** (can be booked on its own)
 - Brow Shape & Tint + Lash Tint — $60
 
 ---
@@ -186,8 +188,7 @@ Get the same name/address/phone onto these (consistency across them is a ranking
 
 Running on **Square Appointments Free**, which cannot hold cards. Policy is therefore:
 
-- **New clients**: a $50 deposit confirms the first appointment, taken off the total on the day
-  (for treatments under $50, the deposit is the treatment price).
+- **New clients**: a $50 deposit confirms the first appointment, taken off the total on the day.
   Send it as a Square payment link or invoice (free to create; you pay only processing).
 - **Returning clients**: no deposit.
 - **24+ hours notice**: deposit moves to the new booking.
@@ -204,7 +205,7 @@ Worth it once either happens: **two actual no-shows**, or **four-plus appointmen
 Until then it is $480/year against a risk that hasn't materialised.
 
 Under Australian Consumer Law any retained deposit must be disclosed before booking and be
-a genuine estimate of the loss. $50 against a two-hour slot is defensible; it should not exceed the price of the treatment booked.
+a genuine estimate of the loss. $50 against a two-hour slot is defensible. Every service that can be booked on its own is $60 or more, so the deposit never exceeds the price.
 
 ---
 

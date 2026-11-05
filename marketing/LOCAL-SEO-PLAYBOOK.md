@@ -134,7 +134,7 @@ Post weekly from the profile. Posts signal an active business and show in the pa
 
 1. **Now booking the northern corridor** — "Lash extensions, refills and brow shaping from a private studio in Yanchep. Classic sets from $120, and I only ever book one client at a time." → Book
 2. **Which set suits you** — "Not sure which you want? Classic is one extension per lash ($120), hybrid mixes in fans ($140), volume is all fans ($160). Send a photo of your natural lashes for an honest rec." → Book
-3. **Brow shape & tint** — "Brows shaped to your face, not a stencil, and tinted for depth. About half an hour, $40 — or $25 for a shape on its own." → Book
+3. **Brow shape & tint** — "Brows shaped to your face, not a stencil, and tinted for depth. Add it to any lash set or refill for $40, or $25 for the shape alone." → Book
 4. **Refill reminder** — "Refills every 2–3 weeks keep a set going indefinitely. Classic refills are $60 at two weeks and $75 at three; hybrid, volume and mega volume refills are priced in proportion. Past four weeks it's usually a new full set — book before you leave." → Book
 5. **Coming from further out** — "Clients travel from Butler, Clarkson, Mindarie and Joondalup. Add a brow shape and tint with a lash tint for $60 and make one trip do the work of two." → Learn more → /areas-we-serve.html
 6. **Event lashes** — "Wedding or event coming up? Book 3–5 days before, not the morning of — it gives shedding time to settle and leaves room to adjust." → Book

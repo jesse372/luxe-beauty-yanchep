@@ -29,11 +29,11 @@ SERVICES = [
      else "Maintains an existing %s set of extensions." % n.split(" Two ")[0].split(" Three ")[0].lower())
     for n, p, _ in prices.refill_services()
 ] + [
-    ("Lash Removal", "25", "Safe, gentle removal with no damage to natural lashes."),
-    ("Lash Tint", "25", "Darkens fair lash tips."),
-    ("Brow Shape", "25", "Shaping only."),
-    ("Brow Shape and Tint", "40", "Shaped and tinted."),
-    ("Brow Shape and Tint with Lash Tint", "60", "Brows shaped and tinted with a lash tint in one appointment."),
+    ("Lash Removal", "25", "Safe, gentle removal. Add-on to a lash set or refill."),
+    ("Lash Tint", "25", "Darkens fair lash tips. Add-on to a lash set or refill."),
+    ("Brow Shape", "25", "Shaping only. Add-on to a lash set or refill."),
+    ("Brow Shape and Tint", "40", "Shaped and tinted. Add-on to a lash set or refill."),
+    ("Brow Shape and Tint with Lash Tint", "60", "Brows shaped and tinted with a lash tint. Can be booked on its own."),
 ]
 
 AREAS = ["Yanchep"] + [s["name"] for s in TIER_A] + [b[0] for b in TIER_B]
@@ -164,7 +164,7 @@ def write_llms():
     A("- How long do lash extensions last? Individual extensions last the life of the natural lash they are attached to, six to eight weeks. A refill every two to three weeks keeps a set looking full.")
     A("- How long does a full set take? About two hours for classic, up to two and a half for volume or mega volume.")
     A("- Is a patch test needed? Yes, before a first appointment, at least 24 hours ahead and preferably 48.")
-    A("- How much are brows? A brow shape is $25, or $40 with a tint. A brow shape and tint with a lash tint is $60.")
+    A("- How much are brows? A brow shape is $25, or $40 with a tint, as an add-on to a lash set or refill. Lash tint and lash removal ($25 each) are add-ons too. Booked without lashes, a brow shape and tint with a lash tint is $60.")
     A("- Where is the studio? Yanchep, WA 6035. It is a private home studio; the exact address is sent on booking confirmation. Free off-street parking.")
     A("")
     open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write("\n".join(lines))
