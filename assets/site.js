@@ -7,7 +7,7 @@
    whole site updates. Until then it falls back to Instagram DMs.
    ============================================================ */
 
-const BOOKING_URL = "https://squareup.com/appointments/book/Q0QM7TJZ6949G";
+const BOOKING_URL = "https://book.squareup.com/appointments/7f8c8bo8u2qnx0/location/L33Q7M0YA0VCJ";
 
 const CONTACT = {
   instagram: "https://www.instagram.com/luxebeautyyanchep/",
