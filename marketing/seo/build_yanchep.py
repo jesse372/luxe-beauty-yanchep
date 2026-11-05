@@ -10,6 +10,7 @@ whole point.
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_seo as B
+import prices
 
 ROOT, SITE = B.ROOT, B.SITE
 SLUG = "lash-extensions-yanchep.html"
@@ -22,8 +23,9 @@ DESC  = ("Eyelash extensions in Yanchep, WA from $120. Classic, hybrid, volume a
 
 FAQS = [
  ("How much are lash extensions in Yanchep?",
-  "A classic full set is $120, hybrid $140, volume $160 and mega volume $180. Refills are $60 at two "
-  "weeks or $75 at three weeks. Every price is published on this page - you will never be quoted a "
+  "A classic full set is $120, hybrid $140, volume $160 and mega volume $180. Refills for a "
+  "classic set are $60 at two weeks or $75 at three weeks, and refills for the other styles are priced "
+  "in the same proportion to their full set. Every price is published on this page - you will never be quoted a "
   "different number on the day."),
  ("How long do eyelash extensions last?",
   "Individual extensions last the life of the natural lash they are attached to, which is six to eight "
@@ -62,7 +64,7 @@ FAQS = [
   "In Yanchep, WA 6035. It is a private home studio, so the address is not published - it is sent to "
   "you when your appointment is confirmed. There is free off-street parking."),
  ("Can you fill a set done by someone else?",
-  "Yes. A foreign lash refill is from $85, priced higher because it takes longer to assess, tidy and "
+  "Yes. A foreign lash refill is from $85 for a classic set, priced higher because it takes longer to assess, tidy and "
   "rebalance existing work. Send a photo before booking so the quote and the time set aside are accurate."),
 ]
 
@@ -94,8 +96,8 @@ def build():
         {"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":p,"priceCurrency":"AUD",
          "availability":"https://schema.org/InStock"} for n,p in
         [("Classic Full Set","120"),("Hybrid Full Set","140"),("Volume Full Set","160"),
-         ("Mega Volume Full Set","180"),("Two Week Refill","60"),("Three Week Refill","75"),
-         ("Foreign Lash Refill","85"),("Lash Removal","25")]]}}
+         ("Mega Volume Full Set","180")]
+        + [(n, str(p)) for n, p, _ in prices.refill_services()] + [("Lash Removal","25")]]}}
     faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":strip(q),"acceptedAnswer":{"@type":"Answer","text":strip(a)}}
       for q,a in FAQS]}
@@ -163,8 +165,7 @@ def build():
       is far thinner, a fan of five can weigh less than one thick classic extension &mdash; volume is
       denser, not heavier. <b>Mega volume</b> pushes that further and needs healthy natural lashes to carry it.</p>
       <p>Not sure? <a href="classic-vs-hybrid-vs-volume-lashes.html">The full comparison guide</a> goes
-      deeper, and <a href="lash-lift-vs-extensions.html">lash lift vs extensions</a> is worth reading if
-      you are still deciding whether extensions are the right treatment at all.</p>
+      deeper.</p>
     </div>
 
 {pricing}
@@ -225,7 +226,6 @@ def build():
     <div class="center" style="max-width:760px;margin:0 auto">
       <a class="btn ghost" href="lash-extensions-cost-perth.html" style="margin:0 8px 8px 0">What lashes cost</a>
       <a class="btn ghost" href="classic-vs-hybrid-vs-volume-lashes.html" style="margin:0 8px 8px 0">Classic, hybrid or volume</a>
-      <a class="btn ghost" href="lash-lift-vs-extensions.html" style="margin:0 8px 8px 0">Lift vs extensions</a>
       <a class="btn ghost" href="aftercare.html" style="margin:0 8px 8px 0">Aftercare</a>
     </div>
   </div>
@@ -255,9 +255,7 @@ PRICING_YANCHEP = """
       <div class="row"><span class="name">Hybrid Full Set</span><span class="desc">Classic and volume mixed &mdash; texture and fullness without the weight.</span><span class="price">$140</span></div>
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Handmade fans for a fluffy, fuller, camera-ready look.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density and drama, still lightweight on the lash.</span><span class="price">$180</span></div>
-      <div class="row"><span class="name">Two Week Refill</span><span class="desc">The best-value way to maintain a set.</span><span class="price">from $60</span></div>
-      <div class="row"><span class="name">Three Week Refill</span><span class="desc">A little more to rebuild. Still cheaper than starting again.</span><span class="price">from $75</span></div>
-      <div class="row"><span class="name">Foreign Lash Refill</span><span class="desc">Filling another artist&rsquo;s work, including tidy-up.</span><span class="price">from $85</span></div>
+""" + prices.refill_rows() + """
       <div class="row"><span class="name">Lash Removal</span><span class="desc">Safe, gentle removal with no damage to your natural lashes.</span><span class="price">$25</span></div>
     </div>"""
 

@@ -14,7 +14,7 @@ TIER_B = [b for b in TIER_B if b[0] not in _a]   # promoted suburbs get a page, 
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 SITE = "https://luxebeautyyanchep.com"
-TODAY = "2026-09-20"
+TODAY = "2026-11-05"
 
 NAV = """<header class="site-head">
   <div class="head-in">
@@ -44,14 +44,10 @@ def footer(area_line):
         <p>Luxury lashes &amp; brows in a private home studio.<br>Enhancing your natural beauty.</p></div>
       <div><h4>Treatments</h4>
         <a href="lash-extensions-yanchep.html">Lash extension prices</a>
-        <a href="lash-lift-yanchep.html">Lash lift &amp; tint Yanchep</a>
-        <a href="brow-lamination-yanchep.html">Brow lamination Yanchep</a>
         <a href="services.html">All services &amp; pricing</a></div>
       <div><h4>Guides</h4>
         <a href="lash-extensions-cost-perth.html">What lashes cost</a>
-        <a href="lash-lift-vs-extensions.html">Lift vs extensions</a>
-        <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a>
-        <a href="brow-lamination-vs-microblading.html">Lamination vs microblading</a></div>
+        <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a></div>
       <div><h4>Areas served</h4>
         <a href="areas-we-serve.html">All areas we serve</a>
         <a href="lash-extensions-butler.html">Lashes Butler</a>
@@ -82,10 +78,9 @@ PRICING = """    <div class="menu rv">
       <div class="row"><span class="name">Hybrid Full Set</span><span class="desc">Classic and volume mixed for texture.</span><span class="price">$140</span></div>
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Lightweight fans for density and softness.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density, still weightless.</span><span class="price">$180</span></div>
-      <div class="row"><span class="name">Two / Three Week Refill</span><span class="desc">Keeps a set going indefinitely.</span><span class="price">$60 / $75</span></div>
-      <div class="row"><span class="name">Lash Lift &amp; Tint</span><span class="desc">Your own lashes, lifted for six to eight weeks.</span><span class="price">$90</span></div>
-      <div class="row"><span class="name">Brow Lamination &amp; Tint</span><span class="desc">Brows reset to sit full and brushed-up.</span><span class="price">$85</span></div>
-      <div class="row"><span class="name">Lash Lift &amp; Tint + Brow Lamination &amp; Tint</span><span class="desc">The full eye reset. Save $15.</span><span class="price">$160</span></div>
+      <div class="row"><span class="name">Lash Refills</span><span class="desc">Two and three week refills for every style, priced in proportion to the set. <a href="services.html">Full list</a>.</span><span class="price">from $60</span></div>
+      <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Shaped and tinted for depth and definition.</span><span class="price">$40</span></div>
+      <div class="row"><span class="name">Brow Shape &amp; Tint + Lash Tint</span><span class="desc">A quick refresh before an event. Save $5.</span><span class="price">$60</span></div>
     </div>"""
 
 def head(title, desc, slug, hero_img, extra_ld):
@@ -132,7 +127,7 @@ ALL_NAMES = [s["name"] for s in TIER_A] + [b[0] for b in TIER_B]
 def build_suburb(s, idx):
     n, slug = s["name"], "lash-extensions-%s.html" % s["slug"]
     title = "Lash Extensions %s | Lashes &amp; Brows | Luxe Beauty Yanchep" % n
-    desc = ("Lash extensions, lash lifts and brow lamination for %s, WA. A private studio in Yanchep, "
+    desc = ("Lash extensions, refills and brow shaping for %s, WA. A private studio in Yanchep, "
             "about %s minutes from %s via %s. Classic sets from $120." % (n, s["mins"], n, s["route"]))
     desc_plain = desc.replace("&mdash;", "-")
 
@@ -155,8 +150,8 @@ def build_suburb(s, idx):
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Classic Full Set"},"price":"120","priceCurrency":"AUD"},
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hybrid Full Set"},"price":"140","priceCurrency":"AUD"},
         {"@type":"Offer","itemOffered":{"@type":"Service","name":"Volume Full Set"},"price":"160","priceCurrency":"AUD"},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lash Lift and Tint"},"price":"90","priceCurrency":"AUD"},
-        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brow Lamination and Tint"},"price":"85","priceCurrency":"AUD"}]}}
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mega Volume Full Set"},"price":"180","priceCurrency":"AUD"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brow Shape and Tint"},"price":"40","priceCurrency":"AUD"}]}}
 
     def strip(x): return x.replace("&mdash;","-").replace("&nbsp;"," ").replace("&amp;","&")
     faq = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -216,12 +211,12 @@ def build_suburb(s, idx):
       <div class="card"><span class="num">01</span><h3>Lash extensions</h3>
         <p>Classic, hybrid, volume and mega volume, mapped to your eye shape and natural lash health.
         <a href="lash-extensions-yanchep.html">Full details &amp; pricing</a>.</p></div>
-      <div class="card"><span class="num">02</span><h3>Lash lift &amp; tint</h3>
-        <p>A keratin lift on your own lashes, six to eight weeks, no refills.
-        <a href="lash-lift-yanchep.html">Full details &amp; pricing</a>.</p></div>
-      <div class="card"><span class="num">03</span><h3>Brow lamination</h3>
-        <p>Brows reset to sit full and brushed-up, with optional tint and shape.
-        <a href="brow-lamination-yanchep.html">Full details &amp; pricing</a>.</p></div>
+      <div class="card"><span class="num">02</span><h3>Lash refills</h3>
+        <p>Two and three week refills for classic, hybrid, volume and mega volume sets, and refills of
+        another artist&rsquo;s work. <a href="services.html">Full details &amp; pricing</a>.</p></div>
+      <div class="card"><span class="num">03</span><h3>Brows &amp; tinting</h3>
+        <p>Brow shaping mapped to your face, brow tint and lash tint, on their own or as a package.
+        <a href="services.html">Full details &amp; pricing</a>.</p></div>
     </div>
 
     <div class="sec-head center rv" style="margin-top:clamp(66px,9vw,110px)">
@@ -340,9 +335,9 @@ def build_hub():
     </div>
     <div class="grid g3 rv">
       <div class="card"><span class="num">01</span><h3>Combine treatments</h3>
-        <p>A lash lift and tint with brow lamination and tint is $160 together rather than $175
-        separately, and runs about two hours in one sitting. Most clients travelling more than
-        twenty-five minutes book a combination.</p></div>
+        <p>A brow shape and tint with a lash tint is $60 together rather than $65 separately, and
+        takes about 45 minutes in one sitting. If you are travelling for a full set, ask about adding
+        brows to the same visit rather than driving twice.</p></div>
       <div class="card"><span class="num">02</span><h3>Plan the patch test</h3>
         <p>Anything involving tint or lash adhesive needs a patch test about 48 hours before your first
         appointment. If you are coming a distance, tie it to another trip rather than driving twice.</p></div>
@@ -367,8 +362,8 @@ def build_hub():
         private home studio, so the address is not published &mdash; it is sent to you once your appointment
         is confirmed. There is free off-street parking.</p></details>
       <details class="faq"><summary>How long should I allow for an appointment?</summary><p>A classic full set
-        is about two hours, volume closer to two and a half. Refills are under an hour, and a lash lift is
-        45 minutes to an hour. Add your drive time to that when planning the day.</p></details>
+        is about two hours, volume closer to two and a half. Refills are around an hour.
+        Add your drive time to that when planning the day.</p></details>
     </div>
   </div>
 </section>
@@ -401,15 +396,13 @@ def main():
     written.append((slug, "0.9"))
     print("  wrote", slug)
 
-    guides = [("lash-extensions-cost-perth.html","0.8"),("lash-lift-vs-extensions.html","0.8"),
-              ("classic-vs-hybrid-vs-volume-lashes.html","0.7"),
-              ("brow-lamination-vs-microblading.html","0.7")]
+    guides = [("lash-extensions-cost-perth.html","0.8"),
+              ("classic-vs-hybrid-vs-volume-lashes.html","0.7")]
     core = [("", "1.0"), ("services.html","0.9"), ("lash-extensions-yanchep.html","0.9"),
-            ("lash-lift-yanchep.html","0.9"), ("brow-lamination-yanchep.html","0.9"),
             ("gallery.html","0.7"), ("contact.html","0.8"), ("aftercare.html","0.6"),
             ("about.html","0.6")]
-    urls = (core[:5] + [("areas-we-serve.html","0.9")] + guides
-            + [w for w in written if w[0]!="areas-we-serve.html"] + core[5:])
+    urls = (core[:3] + [("areas-we-serve.html","0.9")] + guides
+            + [w for w in written if w[0]!="areas-we-serve.html"] + core[3:])
     seen, out = set(), []
     for u,p in urls:
         if u in seen: continue

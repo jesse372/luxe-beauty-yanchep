@@ -51,7 +51,7 @@ TIER_A = [
    "run north on an empty road rather than a crawl through afternoon traffic.",
  "faqs":[
   ("Is the studio the closest lash salon to Two Rocks?",
-   "For lash extensions, lash lifts and brow lamination, yes &mdash; the studio in Yanchep is about "
+   "For lash extensions, lash tinting and brow shaping, yes &mdash; the studio in Yanchep is about "
    "nine minutes south, where the next nearest options are in Clarkson or Joondalup, thirty-plus minutes away."),
   ("How long is the drive from Two Rocks?",
    "Roughly 7 kilometres, about nine minutes via Two Rocks Road and Marmion Avenue. There is no "
@@ -84,7 +84,7 @@ TIER_A = [
   ("Which set suits someone at the beach a lot?",
    "Alkimos clients are in and out of the water constantly, and that shortens the life of a set. A "
    "classic or hybrid set with a slightly stronger adhesive holds up better than mega volume, and a "
-   "lash lift is worth considering if you swim most days &mdash; there is nothing to fall out."),
+   "two-week refill cycle keeps it looking full if you swim most days."),
  ],
 },
 {
@@ -105,11 +105,11 @@ TIER_A = [
    "Jindalee itself is almost entirely residential with no beauty strip. The closest studio is in "
    "Yanchep, about ten kilometres and eleven minutes north on Marmion Avenue."),
   ("Do you do brows as well as lashes for Jindalee clients?",
-   "Yes &mdash; brow lamination, henna, tinting and shaping are all available, and combining brows "
-   "with a lash appointment saves a second trip. There are combination prices for exactly that reason."),
+   "Yes &mdash; brow shaping and tinting are both available, and combining brows "
+   "with a lash appointment saves a second trip. There is a combination price for exactly that reason."),
   ("Can I book lashes and brows in the same visit?",
-   "Yes, and it is the most common request from further-out suburbs. A lash lift with brow lamination "
-   "and tint runs about two hours together and is priced as a combination rather than two separate services."),
+   "Yes, and it is the most common request from further-out suburbs. A brow shape and tint with a lash "
+   "tint runs about 45 minutes together and is priced as a combination rather than two separate services."),
  ],
 },
 {
@@ -155,12 +155,12 @@ TIER_A = [
   ("How long does it take to get to the studio from Merriwa?",
    "About 14 kilometres, roughly sixteen minutes via Connolly Drive and Marmion Avenue."),
   ("How often do I need refills?",
-   "Every two to three weeks for most people. A two-week refill is $60 and a three-week refill is $75. "
+   "Every two to three weeks for most people. For a classic set a two-week refill is $60 and a three-week refill is $75; other styles are priced in proportion. "
    "Leaving it past four weeks usually means paying for a new full set, so Merriwa regulars tend to book "
    "the next one before they leave."),
   ("What happens if my lashes are damaged from a previous salon?",
    "It gets assessed honestly at the consultation. If the natural lashes need a break, that will be said "
-   "plainly rather than applying a set over the top &mdash; sometimes the right answer is a lash lift or a "
+   "plainly rather than applying a set over the top &mdash; sometimes the right answer is a "
    "few weeks of recovery first."),
  ],
 },
@@ -184,9 +184,9 @@ TIER_A = [
    "It will shorten their life, but it does not ruin them. Keep them dry for the first 24 hours, rinse "
    "with fresh water after the ocean, and brush them through once dry. Regular swimmers usually go to a "
    "two-week refill cycle instead of three."),
-  ("Is a lash lift better than extensions if I swim daily?",
-   "Often, yes. A lift changes your own lashes rather than attaching anything, so there is nothing for "
-   "salt water to loosen. It lasts six to eight weeks with no refills, which suits a lot of Quinns Rocks clients."),
+  ("Which set holds up best if I swim daily?",
+   "A classic or hybrid set. Lighter extensions put less load on each bond than dense volume fans, so "
+   "they cope better with salt water and daily rinsing between refills."),
  ],
 },
 {
@@ -197,16 +197,16 @@ TIER_A = [
  "intro":"Ridgewood is roughly seventeen minutes from the studio via Connolly Drive and Marmion Avenue. "
    "It sits just inland of the coast between Merriwa and Clarkson, and the drive north is one of the "
    "simpler ones in the corridor &mdash; two roads, no freeway.",
- "angle":"A lot of Ridgewood enquiries start with brows rather than lashes. Brow lamination has quietly "
-   "become the most requested single treatment in the studio, largely because it fixes the one thing "
-   "makeup cannot: brow hair that will not sit where you want it.",
+ "angle":"A lot of Ridgewood enquiries start with brows rather than lashes. A brow shape and tint takes "
+   "about half an hour, is mapped to your face rather than a stencil, and is an easy first appointment "
+   "before committing to a full set of lashes.",
  "local":"Ridgewood Park is the usual local landmark, and from there it is a straight run north to Yanchep.",
  "faqs":[
   ("How far is the studio from Ridgewood?",
    "About 15 kilometres, or seventeen minutes via Connolly Drive and Marmion Avenue."),
-  ("What is brow lamination and how long does it last?",
-   "It is a treatment that relaxes and resets the direction your brow hairs grow, so they sit fuller and "
-   "brushed-up. It lasts six to eight weeks. Lamination is $70, or $85 with a tint, or $95 with tint and shape."),
+  ("What brow treatments do you offer?",
+   "Brow shaping &mdash; a wax and tweeze mapped to your features &mdash; is $25, or $40 with a tint. "
+   "A brow shape and tint with a lash tint is $60 as a package."),
   ("Do I need a patch test first?",
    "For anything involving tint or lash adhesive, a patch test is recommended before your first "
    "appointment &mdash; ideally 48 hours ahead. For Ridgewood clients it is usually worth combining the "
@@ -275,7 +275,7 @@ TIER_A = [
    "cutting west on Flynn Drive to Marmion Avenue. It is one of the few inland suburbs on this list, and "
    "the drive is a genuinely pleasant one outside peak hour.",
  "angle":"Because the trip is a little longer, Banksia Grove clients usually make it count &mdash; lashes "
-   "and brows in the same visit, or a lift and lamination together. The combination pricing exists for "
+   "and brows in the same visit rather than two separate trips. The combination pricing exists for "
    "exactly this, and the appointment is planned as one block rather than two.",
  "local":"Banksia Grove Village and Joseph Banks Secondary College are the usual local reference points. "
    "Flynn Drive is the quickest way across to the coast road.",
@@ -283,12 +283,12 @@ TIER_A = [
   ("How far is Banksia Grove from the Yanchep studio?",
    "About 22 kilometres, roughly twenty-three minutes via Wanneroo Road and Flynn Drive."),
   ("Is it worth the drive from an inland suburb?",
-   "It depends on what you book. For a single brow tint, probably not. For a full set, a lift and "
-   "lamination combination, or a standing refill with a technician you trust, Banksia Grove clients "
+   "It depends on what you book. For a single brow tint, probably not. For a full set, a lash and "
+   "brow combination, or a standing refill with a technician you trust, Banksia Grove clients "
    "generally say yes &mdash; and tend to book combinations to make one trip do the work of two."),
   ("Can I combine lashes and brows to save a trip?",
-   "Yes, and it is recommended for anyone coming from inland. A lash lift and tint with brow lamination "
-   "and tint is $160 together rather than $175 separately, and runs about two hours in one sitting."),
+   "Yes, and it is recommended for anyone coming from inland. A brow shape and tint with a lash tint "
+   "is $60 together rather than $65 separately, and takes about 45 minutes in one sitting."),
  ],
 },
 {
@@ -449,7 +449,7 @@ TIER_A += [
    "on Marmion Avenue. It is one of the more established coastal pockets in the area and its clients "
    "tend to arrive with a very clear brief.",
  "angle":"Iluka bookings skew heavily towards the natural end of the menu &mdash; classic sets, lash "
-   "lifts, brow lamination without a heavy tint. The request that comes up most is some version of "
+   "tints, brows shaped without a heavy tint. The request that comes up most is some version of "
    "\u201cI want it to look like I slept well, not like I had something done\u201d, which is a harder "
    "brief than a dramatic set and a more satisfying one to get right.",
  "local":"Iluka Plaza and the foreshore park are the local landmarks; Marmion Avenue north is the "
@@ -459,8 +459,8 @@ TIER_A += [
    "About 22 kilometres, roughly twenty-four minutes north on Marmion Avenue."),
   ("Which set looks the most natural?",
    "A classic set, one extension per natural lash, at a length close to your own. It reads as your "
-   "lashes on a good day rather than as extensions. If even that feels like too much, a lash lift and "
-   "tint changes nothing but the curl and colour of what you already have."),
+   "lashes on a good day rather than as extensions. If even that feels like too much, a lash "
+   "tint changes nothing but the colour of what you already have."),
   ("Will people be able to tell?",
    "Done properly, not really &mdash; the giveaway is almost always length or weight rather than the "
    "extensions themselves. Mapping to your eye shape and staying within what your natural lashes can "
@@ -489,7 +489,7 @@ TIER_A += [
   ("Do my lashes need a break from extensions?",
    "Sometimes, and you will be told when. Healthy natural lashes can carry extensions indefinitely "
    "with proper application and regular refills, but if there is visible thinning or stress the honest "
-   "advice is a few weeks off, or a lift instead. A set applied over damaged lashes helps nobody."),
+   "advice is a few weeks off. A set applied over damaged lashes helps nobody."),
  ],
 },
 {
@@ -512,10 +512,9 @@ TIER_A += [
    "They do, with a shorter refill cycle. Salt spray and wind loosen adhesive faster than ordinary "
    "wear, so expect two-week refills rather than three. Rinse with fresh water after a day out and "
    "brush them through once dry."),
-  ("Would a lash lift be a better option?",
-   "For heavy water users, often yes. A lift restructures your own lashes so there is no adhesive to "
-   "break down &mdash; six to eight weeks, no refills, and nothing that can be pulled out by a towel "
-   "or a wetsuit hood."),
+  ("Which set copes best with salt and wind?",
+   "A classic or hybrid set. Lighter extensions put less load on each bond than dense volume fans, so "
+   "they hold up better between refills when you are on the water every weekend."),
  ],
 },
 {
@@ -524,23 +523,24 @@ TIER_A += [
  "hero":"photos/lash-1.jpg",
  "intro":"Mullaloo is about thirty minutes from the studio on Marmion Avenue. It is one of the most "
    "swum-at beaches in the northern suburbs, and that shows up in what Mullaloo clients end up booking.",
- "angle":"More Mullaloo enquiries end in a lash lift than in extensions, and that is the right outcome "
-   "rather than a lost sale. If you are in the water most days, a lift gives you six to eight weeks "
-   "with nothing to maintain and nothing to lose, where a set of extensions would be asking for a "
-   "fortnightly refill and a lot of driving.",
+ "angle":"Mullaloo clients are in the water more than most, and the advice reflects that. A lighter "
+   "classic or hybrid set on a two-week refill cycle copes with salt water far better than heavy "
+   "volume, and if your routine makes extensions a poor fit you will be told so plainly rather than "
+   "sold a set that will not last.",
  "local":"Mullaloo Beach, the surf club and Tom Simpson Park are the local landmarks; Marmion Avenue "
    "runs the whole way north.",
  "faqs":[
   ("How far is the studio from Mullaloo?",
    "About 28 kilometres, or thirty minutes north on Marmion Avenue. It is towards the outer edge of "
    "the regular catchment."),
-  ("Is it worth a thirty minute drive for a lash lift?",
-   "A lift lasts six to eight weeks with no refills, so it is one trip per cycle rather than a "
-   "fortnightly commitment. For swimmers coming from Mullaloo that maths usually works; a set of "
-   "extensions needing refills every two weeks generally does not."),
-  ("Can I swim after a lash lift?",
-   "Keep them dry for the first 24 hours while the lift sets. After that there are no restrictions at "
-   "all &mdash; swim, surf, shower, no special products required."),
+  ("Is it worth a thirty minute drive for lashes?",
+   "For the full set, usually yes &mdash; it is one long appointment. Refills are the real commitment: "
+   "every two to three weeks, about an hour each, so be honest with yourself about the drive before "
+   "you start."),
+  ("Can I swim with lash extensions?",
+   "Yes, once the adhesive has cured &mdash; keep them dry for the first 24 hours. After that, rinse "
+   "with fresh water after the ocean and brush them through once dry. Daily swimmers usually move to "
+   "a two-week refill cycle."),
  ],
 },
 {
@@ -565,8 +565,8 @@ TIER_A += [
    "first-set regret."),
   ("What does it actually cost to maintain?",
    "A classic full set is $120, then refills every two to three weeks at $60 or $75. Budget roughly "
-   "$120 to $150 a month to keep a set going. If that does not suit, a lash lift at $75 every six to "
-   "eight weeks is the lower-commitment option and there is no shame in choosing it."),
+   "$120 to $150 a month to keep a classic set going; refills for the other styles are priced in "
+   "proportion to the set."),
  ],
 },
 {
@@ -591,8 +591,8 @@ TIER_A += [
    "of them came on somebody else's recommendation rather than an ad. For a single brow tint it is "
    "hard to justify the drive, and you will be told so."),
   ("Can I book lashes and brows together to make one trip?",
-   "Yes, and it is recommended at this distance. A lash lift and tint with brow lamination and tint is "
-   "$160 together rather than $175 separately, and runs about two hours in a single sitting."),
+   "Yes, and it is recommended at this distance. A brow shape and tint with a lash tint is "
+   "$60 together rather than $65 separately, and takes about 45 minutes in a single sitting."),
  ],
 },
 ]
