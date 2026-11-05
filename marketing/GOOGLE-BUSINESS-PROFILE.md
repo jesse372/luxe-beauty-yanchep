@@ -186,7 +186,8 @@ Get the same name/address/phone onto these (consistency across them is a ranking
 
 Running on **Square Appointments Free**, which cannot hold cards. Policy is therefore:
 
-- **New clients**: a $20 deposit confirms the first appointment, taken off the total on the day.
+- **New clients**: a $50 deposit confirms the first appointment, taken off the total on the day
+  (for treatments under $50, the deposit is the treatment price).
   Send it as a Square payment link or invoice (free to create; you pay only processing).
 - **Returning clients**: no deposit.
 - **24+ hours notice**: deposit moves to the new booking.
@@ -203,7 +204,7 @@ Worth it once either happens: **two actual no-shows**, or **four-plus appointmen
 Until then it is $480/year against a risk that hasn't materialised.
 
 Under Australian Consumer Law any retained deposit must be disclosed before booking and be
-a genuine estimate of the loss. $20 against a two-hour slot is comfortably defensible.
+a genuine estimate of the loss. $50 against a two-hour slot is defensible; it should not exceed the price of the treatment booked.
 
 ---
 
