@@ -41,9 +41,7 @@ they look for a salon, and carry no doorway risk because they are not geo-target
 | Page | Targets |
 |---|---|
 | `lash-extensions-cost-perth.html` | "how much do lash extensions cost perth" |
-| `lash-lift-vs-extensions.html` | "lash lift vs extensions" |
 | `classic-vs-hybrid-vs-volume-lashes.html` | "classic vs hybrid vs volume" |
-| `brow-lamination-vs-microblading.html` | "brow lamination vs microblading" |
 
 **Expect the guides to out-earn the suburb pages.** "How much do lash extensions cost"
 has more monthly volume than every suburb query on this site combined. They also earn
@@ -134,14 +132,14 @@ the reviewer.)*
 
 Post weekly from the profile. Posts signal an active business and show in the panel.
 
-1. **Now booking the northern corridor** — "Lash extensions, lifts and brow lamination from a private studio in Yanchep. Classic sets from $120, and I only ever book one client at a time." → Book
-2. **Lash lift vs extensions** — "Not sure which you want? A lift curls your own lashes for 6–8 weeks with zero upkeep ($75). Extensions add length and density a lift can't ($120+). Send a photo of your natural lashes for an honest rec." → Book
-3. **Brow lamination** — "The treatment that fixes the one thing makeup can't: brow hairs that won't sit where you want them. 6–8 weeks, $70, or $85 with a tint." → Book
-4. **Refill reminder** — "Refills every 2–3 weeks keep a set going indefinitely. Two-week $60, three-week $75. Past four weeks it's usually a new full set — book before you leave." → Book
-5. **Coming from further out** — "Clients travel from Butler, Clarkson, Mindarie and Joondalup. Combine a lash lift and brow lamination for $160 and make one trip do the work of two." → Learn more → /areas-we-serve.html
+1. **Now booking the northern corridor** — "Lash extensions, refills and brow shaping from a private studio in Yanchep. Classic sets from $120, and I only ever book one client at a time." → Book
+2. **Which set suits you** — "Not sure which you want? Classic is one extension per lash ($120), hybrid mixes in fans ($140), volume is all fans ($160). Send a photo of your natural lashes for an honest rec." → Book
+3. **Brow shape & tint** — "Brows shaped to your face, not a stencil, and tinted for depth. About half an hour, $40 — or $25 for a shape on its own." → Book
+4. **Refill reminder** — "Refills every 2–3 weeks keep a set going indefinitely. Classic refills are $60 at two weeks and $75 at three; hybrid, volume and mega volume refills are priced in proportion. Past four weeks it's usually a new full set — book before you leave." → Book
+5. **Coming from further out** — "Clients travel from Butler, Clarkson, Mindarie and Joondalup. Add a brow shape and tint with a lash tint for $60 and make one trip do the work of two." → Learn more → /areas-we-serve.html
 6. **Event lashes** — "Wedding or event coming up? Book 3–5 days before, not the morning of — it gives shedding time to settle and leaves room to adjust." → Book
 7. **Patch tests** — "First time with tint or adhesive? A patch test 48 hours ahead is free and takes two minutes. Worth tying to another trip if you're driving in." → Book
-8. **Lash health** — "If your natural lashes need a break, I'll tell you. Sometimes the right answer is a lift, or a few weeks off — a set applied over damaged lashes helps nobody." → Book
+8. **Lash health** — "If your natural lashes need a break, I'll tell you. Sometimes the right answer is a few weeks off — a set applied over damaged lashes helps nobody." → Book
 
 ---
 

@@ -55,7 +55,7 @@ Final copy — 733/750 characters, checked against Google's content policy (no U
 prices, no promotional language, no all-caps). Paste as-is:
 
 ```
-Luxe Beauty is a private lash and brow studio in Yanchep, Western Australia, offering classic, hybrid, volume and mega volume eyelash extensions, keratin lash lifts, lash tinting, brow lamination, brow henna, tinting and shaping.
+Luxe Beauty is a private lash and brow studio in Yanchep, Western Australia, offering classic, hybrid, volume and mega volume eyelash extensions, lash refills, lash tinting, brow tinting and shaping.
 
 Every set is mapped to your eye shape and the health of your natural lashes, so it suits your features and grows out cleanly. One client is booked at a time in a calm, private studio, with professional-grade products and single-use tools. You see the same technician every visit, and if a lighter set is better for your lashes, that is what you will be told.
 
@@ -83,23 +83,19 @@ make you visible.
 - Hybrid Full Set — $140
 - Volume Full Set — $160
 - Mega Volume Full Set — $180
-- Two Week Refill — from $60
-- Three Week Refill — from $75
-- Foreign Lash Refill — from $85
 - Lash Removal — $25
 
-**Lash Treatments**
-- Lash Lift — $75
-- Lash Lift & Tint — $90
-- Lash Tint — $25
+**Lash Refills** (two week / three week / foreign)
+- Classic — $60 / $75 / $85
+- Hybrid — $70 / $90 / $100
+- Volume — $80 / $100 / $115
+- Mega Volume — $90 / $115 / $130
 
-**Brows**
+**Brows & Tinting**
 - Brow Shape — $25
 - Brow Shape & Tint — $40
-- Brow Lamination — $70
-- Brow Lamination & Tint — $85
-- Brow Lamination, Tint & Shape — $95
-- Brow Henna & Shape — $60
+- Lash Tint — $25
+- Brow Shape & Tint + Lash Tint — $60
 
 ---
 
