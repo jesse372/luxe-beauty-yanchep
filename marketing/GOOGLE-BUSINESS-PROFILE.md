@@ -184,13 +184,10 @@ Get the same name/address/phone onto these (consistency across them is a ranking
 
 ---
 
-## 12. Booking & cancellation policy (free Square plan)
+## 12. Booking & cancellation policy
 
-Running on **Square Appointments Free**, which cannot hold cards. Policy is therefore:
-
-- **New clients**: a $50 deposit confirms the first appointment, taken off the total on the day.
-  Send it as a Square payment link or invoice (free to create; you pay only processing).
-- **Returning clients**: no deposit.
+- **Every booking**: a $50 deposit, charged by Square when the client books online, taken off
+  the total on the day. Square cannot limit a deposit to new clients, so it applies to everyone.
 - **24+ hours notice**: deposit moves to the new booking.
 - **Inside 24 hours or a no-show**: deposit is kept.
 - Balance paid on the day. Cash accepted.
