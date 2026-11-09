@@ -53,6 +53,20 @@ What was done about it on 2026-11-09:
 7. IndexNow set up for Bing (`marketing/seo/indexnow.py`).
 8. The Google Maps listing is linked from the site's structured data, the contact page and aftercare.
 
+Second pass, same day:
+
+9. `lash-infills-yanchep.html`. Australians search "lash infills"; the word was nowhere on the site
+   (the menu says refills). The page also speaks to people whose lash technician has moved on.
+10. Two more guides: do extensions damage natural lashes, and lash styles by eye shape. 41 pages in all.
+11. **Review link: `luxebeautyyanchep.com/review`** forwards to the Google review form. Printable
+    cards are in `marketing/review-card/` (`review-cards-a4.pdf`, four to a page; `review-card.png`
+    for sending). The QR code points at the short link, so if Google's link ever changes, edit
+    `review.html` and the printed cards keep working.
+12. Weekly index report: `com.jesse.gsc-weekly-luxe` (Thursdays 07:10) writes
+    `~/JesseOS/workspace/gsc/reports/luxe-<date>.md` and sends the count to Jesse's phone.
+    Baseline 2026-11-09: 6 of 41 indexed.
+13. Fixed the homepage ticker (items after the third were invisible).
+
 **Decision still open: the outer-ring suburb pages.** Kinross, Currambine, Joondalup, Burns Beach,
 Iluka, Connolly, Ocean Reef, Mullaloo, Tapping and Wanneroo are 23-30 minutes away with their own
 lash salons. They were left in place because Google has not judged them yet. If Search Console still
@@ -159,6 +173,16 @@ pack. A new profile with 10 genuine reviews beats a five-year-old one with 2.
 **Never** buy reviews, post them yourself, or offer a discount for one. Google
 detects velocity anomalies, and review-gating breaches their policy. Suspensions
 are very hard to reverse.
+
+### The link and the card
+
+- Link to text or say: **luxebeautyyanchep.com/review**
+- Card to leave by the mirror or hand over: `marketing/review-card/review-cards-a4.pdf`
+- Text for the same evening: "Hi [name], thanks for coming in today! If you're happy with your
+  lashes, a quick Google review would mean a lot: luxebeautyyanchep.com/review"
+
+Ask everyone, not only the clients you expect to be happy. Asking only happy clients is review
+gating, which Google's rules forbid.
 
 ### Ask script (say it, don't send it)
 
