@@ -13,8 +13,10 @@ def table_html(slug):
     th = "".join("<th>%s</th>" % h for h in heads)
     tr = "".join("<tr><th>%s</th>%s</tr>" % (r[0], "".join("<td>%s</td>" % c for c in r[1:]))
                  for r in rows)
-    return ('<div class="ctable rv"><table><thead><tr>%s</tr></thead>'
-            '<tbody>%s</tbody></table></div>' % (th, tr))
+    # three columns fit a phone without sideways scrolling; wider tables keep the scroll
+    cls = "ctable ctable--fit rv" if len(heads) <= 3 else "ctable rv"
+    return ('<div class="%s"><table><thead><tr>%s</tr></thead>'
+            '<tbody>%s</tbody></table></div>' % (cls, th, tr))
 
 def build(g):
     slug = g["slug"] + ".html"

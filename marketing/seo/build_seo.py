@@ -40,28 +40,30 @@ def footer(area_line):
     return """<footer class="site-foot">
   <div class="wrap">
     <div class="foot-grid">
-      <div><h4>Luxe Beauty Yanchep</h4>
+      <div><p class="foot-h">Luxe Beauty Yanchep</p>
         <p>Luxury lashes &amp; brows in a private home studio.<br>Enhancing your natural beauty.</p></div>
-      <div><h4>Treatments</h4>
+      <div><p class="foot-h">Treatments</p>
         <a href="lash-extensions-yanchep.html">Lash extension prices</a>
+        <a href="lash-infills-yanchep.html">Lash infills</a>
         <a href="eyebrows-yanchep.html">Eyebrows Yanchep</a>
         <a href="services.html">All services &amp; pricing</a>
         <a href="aftercare.html">Aftercare</a></div>
-      <div><h4>Guides</h4>
+      <div><p class="foot-h">Guides</p>
         <a href="lash-guides.html">All lash guides</a>
         <a href="lash-extensions-cost-perth.html">What lashes cost</a>
         <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a>
         <a href="how-long-do-lash-extensions-last.html">How long lashes last</a>
+        <a href="lash-extension-styles-eye-shapes.html">Styles for your eye shape</a>
         <a href="first-lash-extension-appointment.html">Your first appointment</a></div>
-      <div><h4>Areas served</h4>
+      <div><p class="foot-h">Areas served</p>
         <a href="areas-we-serve.html">All areas we serve</a>
         <a href="lash-extensions-two-rocks.html">Lashes Two Rocks</a>
         <a href="lash-extensions-eglinton.html">Lashes Eglinton</a>
         <a href="lash-extensions-alkimos.html">Lashes Alkimos</a>
         <a href="lash-extensions-butler.html">Lashes Butler</a></div>
-      <div><h4>Visit</h4>
+      <div><p class="foot-h">Visit</p>
         <p>Yanchep, WA 6035<br>Private home studio &mdash; exact address<br>sent with your booking confirmation.</p></div>
-      <div><h4>Get in touch</h4>
+      <div><p class="foot-h">Get in touch</p>
         <a data-contact="instagram" href="https://www.instagram.com/luxebeautyyanchep/" target="_blank" rel="noopener">&#64;luxebeautyyanchep</a>
         <a data-contact="email" href="#">Email</a>
         <a data-contact="phone" href="#">Phone</a>
@@ -84,7 +86,7 @@ PRICING = """    <div class="menu rv">
       <div class="row"><span class="name">Hybrid Full Set</span><span class="desc">Classic and volume mixed for texture.</span><span class="price">$140</span></div>
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Lightweight fans for density and softness.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density, still weightless.</span><span class="price">$180</span></div>
-      <div class="row"><span class="name">Lash Refills</span><span class="desc">Two and three week refills for every style, priced in proportion to the set. <a href="services.html">Full list</a>.</span><span class="price">from $60</span></div>
+      <div class="row"><span class="name">Lash Infills</span><span class="desc">Two and three week refills for every style, priced in proportion to the set. <a href="lash-infills-yanchep.html">Infill prices</a>.</span><span class="price">from $60</span></div>
       <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Add-on to any lash set or refill. <a href="eyebrows-yanchep.html">About brows</a>.</span><span class="price">$40</span></div>
       <div class="row"><span class="name">Brow Shape &amp; Tint + Lash Tint</span><span class="desc">Bookable on its own. Save $5.</span><span class="price">$60</span></div>
     </div>"""
@@ -215,9 +217,9 @@ def build_suburb(s, idx):
       <div class="card"><span class="num">01</span><h3>Lash extensions</h3>
         <p>Classic, hybrid, volume and mega volume, mapped to your eye shape and natural lash health.
         <a href="lash-extensions-yanchep.html">Full details &amp; pricing</a>.</p></div>
-      <div class="card"><span class="num">02</span><h3>Lash refills</h3>
+      <div class="card"><span class="num">02</span><h3>Lash infills</h3>
         <p>Two and three week refills for classic, hybrid, volume and mega volume sets, and refills of
-        another artist&rsquo;s work. <a href="how-long-do-lash-extensions-last.html">How refills work</a>.</p></div>
+        another artist&rsquo;s work. <a href="lash-infills-yanchep.html">Lash infills &amp; prices</a>.</p></div>
       <div class="card"><span class="num">03</span><h3>Brows &amp; tinting</h3>
         <p>Brow shaping, brow tint and lash tint, added to a lash appointment or booked together as a package.
         <a href="eyebrows-yanchep.html">Eyebrows in Yanchep</a>.</p></div>

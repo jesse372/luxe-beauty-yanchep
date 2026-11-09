@@ -50,7 +50,7 @@ AREAS = list(dict.fromkeys(AREAS))
 KNOWS_ABOUT = [
     "Eyelash extensions", "Classic lash extensions", "Hybrid lash extensions",
     "Volume lash extensions", "Mega volume lash extensions", "Lash tinting",
-    "Lash refills", "Brow tinting", "Brow shaping", "Eyebrow waxing", "Lash aftercare", "Lash mapping",
+    "Lash refills", "Lash infills", "Brow tinting", "Brow shaping", "Eyebrow waxing", "Lash aftercare", "Lash mapping",
     "Wedding lash extensions",
 ]
 
@@ -64,10 +64,10 @@ HOME_FAQS = [
  ("How much are lash extensions in Yanchep?",
   "A classic full set is $120, hybrid $140, volume $160 and mega volume $180. Every price is published "
   "and is the price you pay on the day."),
- ("How much is a lash refill?",
-  "Classic refills are $60 within two weeks and $75 within three. Hybrid, volume and mega volume refills "
-  "are priced in proportion to the full set, from $70 to $115. Refilling another technician's work costs "
-  "a little more."),
+ ("How much is a lash infill?",
+  "Infills, also called refills, keep an existing set full. Classic infills are $60 within two weeks "
+  "and $75 within three. Hybrid, volume and mega volume infills are priced in proportion to the full "
+  "set, from $70 to $115. Infilling another technician's work costs a little more."),
  ("Do you do eyebrows?",
   "Yes. A brow shape (wax and tweeze) is $25 and a brow shape and tint is $40 when added to a lash "
   "appointment. A brow shape and tint with a lash tint is $60 and can be booked on its own."),
@@ -317,6 +317,7 @@ def write_llms():
     A("")
     A("- [Lash extension prices Yanchep](%s/lash-extensions-yanchep.html): classic, hybrid, volume and mega volume sets, prices, FAQs" % SITE)
     A("- [Eyebrows Yanchep](%s/eyebrows-yanchep.html): brow shape (wax and tweeze), brow tint and lash tint, prices, how to book" % SITE)
+    A("- [Lash infills Yanchep](%s/lash-infills-yanchep.html): two week, three week and foreign infills (refills) for every lash style, with prices" % SITE)
     A("- [Areas we serve](%s/areas-we-serve.html): every suburb served, with distances and drive times" % SITE)
     A("- [Services and pricing](%s/services.html): the full menu" % SITE)
     A("- [Aftercare](%s/aftercare.html): how to make a set last" % SITE)

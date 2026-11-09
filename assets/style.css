@@ -260,7 +260,7 @@ details.faq p{color:var(--fg-dim); margin:0 0 22px; font-size:15px; max-width:70
 .site-foot{border-top:1px solid rgba(247,242,235,.09); background:#131110; color:#CBC1B4;
   padding:clamp(56px,7vw,90px) 0 34px}
 .foot-grid{display:grid; gap:38px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.foot-grid h4{font-size:10px; letter-spacing:.32em; text-transform:uppercase; color:#C4A47C;
+.foot-grid h4,.foot-grid .foot-h{font-size:10px; letter-spacing:.32em; text-transform:uppercase; color:#C4A47C;
   margin:0 0 16px; font-weight:400}
 .foot-grid a{color:#CBC1B4; text-decoration:none; display:block; padding:5px 0; font-size:14.5px}
 .foot-grid a:hover{color:#C4A47C}
@@ -414,3 +414,6 @@ h1.eyebrow{font-family:var(--sans); font-size:11px; line-height:1.7; letter-spac
 a.card{color:inherit}
 a.card:hover h3{color:var(--accent)}
 .menu .desc a,.prose a,.note a,.card p a,.step p a,details.faq p a{color:var(--accent)}
+.ctable--fit table{min-width:0}
+@media (max-width:600px){ .ctable--fit th,.ctable--fit td{padding:13px 8px; font-size:13.5px}
+  .ctable--fit tbody th,.ctable--fit thead th{letter-spacing:.1em; white-space:normal} }

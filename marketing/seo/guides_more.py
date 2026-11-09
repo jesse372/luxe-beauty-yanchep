@@ -325,6 +325,159 @@ MORE_GUIDES = [
  ],
  "cta":"Getting married? Start with a patch test and a trial set six to eight weeks out.",
 },
+{
+ "slug":"do-lash-extensions-damage-natural-lashes",
+ "short":"Do lashes cause damage?",
+ "published":"2026-11-09",
+ "title":"Do Lash Extensions Damage Your Natural Lashes? An Honest Answer",
+ "h1":"Do extensions damage<br>your natural lashes?",
+ "eyebrow":"Lash health guide",
+ "desc":"Lash extensions do not damage natural lashes when they are applied properly. What actually "
+        "causes damage, how to spot a bad set, and how lashes recover.",
+ "hero":"photos/lash-4.jpg",
+ "lede":"Extensions themselves do not damage lashes. Bad application does, and so does bad removal. "
+        "The difference between a set you can wear for years and a set that leaves gaps comes down to "
+        "three things you can check for yourself.",
+ "sections":[
+  ("The short answer","""<p>A properly applied extension is attached to one natural lash, about a
+   millimetre from the skin, and weighs no more than that lash can carry. It grows out with the lash and
+   falls when the lash was going to fall anyway. Nothing about that harms the lash or the follicle.</p>
+   <p>Damage happens when one of those conditions is broken. In practice it is nearly always one of
+   the following.</p>"""),
+  ("What actually causes damage","""<p><b>Lashes glued together.</b> Every natural lash grows at its own
+   speed. If two or three are stuck to one extension, the faster one drags the others out as it grows.
+   Separating each lash before an extension goes on is called isolation, it is the slowest part of the
+   job, and it is the first thing skipped when an appointment is rushed.</p>
+   <p><b>Too much weight.</b> An extension that is too long or too thick for the natural lash bends it,
+   and over weeks the lash sheds early and grows back finer. This is why the set you want and the set
+   your lashes can carry are not always the same thing.</p>
+   <p><b>Pulling them off.</b> Picking at extensions or peeling them off takes the natural lash with
+   them. Proper removal dissolves the adhesive so the extension slides off, and it takes a few minutes.</p>
+   <p><b>Rubbing.</b> Rubbing your eyes or dragging a towel across them does more harm with extensions on
+   than without.</p>
+   <p><b>Do-it-yourself clusters.</b> Strip-style clusters glued along the lash line at home attach to
+   many lashes at once, which is the same problem as poor isolation.</p>"""),
+  ("How to tell a good set from a bad one",""),
+  ("What a damaged lash line looks like","""<p>Gaps where there used to be lashes. Lashes that are
+   visibly shorter or finer than they were. Extensions coming away in clumps of several lashes rather
+   than one at a time.</p>
+   <p>If that is where you are, the fix is to have the set removed properly and let your lashes grow. A
+   lash takes six to eight weeks to go through its cycle, so expect improvement over one to two months
+   rather than days. They do grow back.</p>"""),
+  ("Do you need a break from extensions?","""<p>Not on a timetable. The idea that lashes need to
+   &ldquo;breathe&rdquo; is a myth. A lash is not alive past the follicle, so it has nothing to breathe
+   with.</p>
+   <p>What matters is whether your natural lashes are healthy <b>now</b>. If they are, and the set is the
+   right weight, there is no reason to stop. If they are thinning, a lighter set or a few weeks off is
+   the answer, and at this studio you will be told that directly, even though it means a smaller
+   booking.</p>"""),
+  ("What to ask before you book anywhere","""<p>How long is the appointment? A full set done properly
+   takes around two hours. Under an hour means isolation is being skipped.</p>
+   <p>Will you tell me if my lashes cannot take the set I am asking for? The right answer is yes.</p>
+   <p>How do you remove them? The right answer involves a remover, never tweezers alone.</p>
+   <p>More on what a very cheap set usually means is in
+   <a href="lash-extensions-cost-perth.html">what lash extensions cost</a>.</p>"""),
+ ],
+ "faqs":[
+  ("Do lash extensions ruin your natural lashes?",
+   "No, not when they are applied properly: one extension to one natural lash, at a weight that lash can "
+   "carry. Damage comes from lashes glued together, extensions that are too heavy, or pulling them off."),
+  ("Will my lashes grow back after extensions?",
+   "Yes. Lashes that were pulled out or shed early regrow from the follicle. A full cycle takes six to "
+   "eight weeks, so allow one to two months to see them back to normal."),
+  ("Do my lashes need a break from extensions?",
+   "Not on a schedule. If your natural lashes are healthy and the set is the right weight, you can wear "
+   "extensions continuously. Take a break only if your lashes are thinning."),
+  ("Can I remove lash extensions myself?",
+   "It is not a good idea. Pulling or picking takes natural lashes with the extensions, and household oils "
+   "only loosen them partly. A professional removal dissolves the adhesive and takes a few minutes. At the "
+   "studio it is $25 as an add-on to a new set or refill."),
+  ("Why do my eyes feel sore or heavy with extensions?",
+   "They should not. Soreness usually means lashes are stuck together and pulling, or an extension is "
+   "touching the skin. Heaviness means the set is too heavy. Both are worth getting checked rather than "
+   "waiting out."),
+  ("Are volume lashes worse for your lashes than classic?",
+   "Not by themselves. A volume fan is made of much finer extensions, so a well-made fan can weigh less "
+   "than a single thick classic extension. What matters is the total weight on each natural lash."),
+ ],
+ "cta":"Worried about your natural lashes? Send a photo first, and you will get an honest answer about what they can carry.",
+},
+{
+ "slug":"lash-extension-styles-eye-shapes",
+ "short":"Styles for your eye shape",
+ "published":"2026-11-09",
+ "title":"Cat Eye, Doll Eye or Natural? Lash Styles for Your Eye Shape",
+ "h1":"Lash styles for<br>your eye shape",
+ "eyebrow":"Style guide &middot; Lash mapping",
+ "desc":"Cat eye, doll eye, squirrel and natural lash extension styles explained, and which suits hooded, "
+        "round, almond, downturned and deep-set eyes.",
+ "hero":"photos/lash-1.jpg",
+ "lede":"Choosing lash extensions is two decisions, and most people only know about one. The first is "
+        "how full the set is. The second is where the length goes, and that one changes the shape of "
+        "your eye far more than fullness does.",
+ "sections":[
+  ("Two decisions, not one","""<p><b>Fullness</b> is the set type: classic, hybrid, volume or mega volume.
+   It decides how dense and dark the lash line looks. That is covered in
+   <a href="classic-vs-hybrid-vs-volume-lashes.html">classic, hybrid or volume</a>.</p>
+   <p><b>Shape</b> is the map: which lengths go where along the eye. Two people can wear the same classic
+   set and look completely different because one is mapped longest at the centre and the other longest
+   at the outer corner.</p>
+   <p>You do not need to know any of the names below to book. Mapping is worked out at the start of
+   every appointment from your eye shape. Knowing the names just makes it easier to say what you
+   like.</p>"""),
+  ("The four shapes","""<p><b>Natural.</b> Follows your own lash line, short at the inner corner and
+   gradually longer towards the outer third. It looks like your lashes on a very good day, and it suits
+   almost everyone.</p>
+   <p><b>Doll eye</b>, also called open eye. The longest lashes sit over the centre of the eye, above the
+   pupil. It makes the eye look rounder, bigger and more awake.</p>
+   <p><b>Cat eye.</b> Length builds steadily to the outer corner. It draws the eye outwards and gives a
+   longer, more winged look.</p>
+   <p><b>Squirrel</b>, sometimes called kitten. The longest point sits under the arch of the brow, then
+   the lengths drop again before the outer corner. It gives the lift of a cat eye without weight on the
+   very outer lashes, which matters more than it sounds.</p>"""),
+  ("Which shape suits which eye",""),
+  ("Why the outer corner matters","""<p>The classic mistake is a heavy cat eye on an eye that turns down
+   or has a hood. The outer corner lashes are the finest on the eye and they point downwards. Put the
+   longest extensions there and they follow the lash down, so instead of lifting the eye the set pulls
+   it down.</p>
+   <p>This is why a squirrel map exists, and why a look copied from a photo does not always work on a
+   different face. It is also why a good consultation sometimes ends with a different shape from the
+   one you asked for.</p>"""),
+  ("Length and curl","""<p><b>Length.</b> An extension can only be a little longer than the natural lash
+   it sits on, or it is too heavy for it. If your own lashes are short, very long extensions are not an
+   honest option, whatever the photo shows. Density can be added instead.</p>
+   <p><b>Curl.</b> Straight or downward-pointing natural lashes need a stronger curl to open the eye.
+   Hooded and deep-set eyes need the curl chosen so the lashes clear the lid or brow bone instead of
+   brushing against it. A softer curl looks more natural on lashes that already curl upwards.</p>"""),
+  ("How to ask for what you want","""<p>Bring a photo, of yourself in a set you liked or of someone
+   whose eye shape is close to yours. A photo of a look on a very different eye is still useful, as long
+   as you are open to hearing how it would translate.</p>
+   <p>Say how you want to feel as well as how you want to look. &ldquo;Awake without makeup&rdquo; and
+   &ldquo;done for a wedding&rdquo; lead to different maps even in the same set type.</p>
+   <p>And say if you wear glasses. Length is kept short enough that the lashes do not touch the lenses.</p>"""),
+ ],
+ "faqs":[
+  ("What is the most natural lash extension style?",
+   "A classic or light hybrid set in a natural map, which follows your own lash line and adds length "
+   "gradually towards the outer third of the eye."),
+  ("What is the difference between cat eye and doll eye lashes?",
+   "Where the longest lashes sit. Cat eye puts them at the outer corner, which lengthens the eye. Doll eye "
+   "puts them over the centre, which makes the eye look rounder and more open."),
+  ("What lash style suits hooded eyes?",
+   "Usually doll eye or squirrel, with a curl chosen so the lashes clear the hood. A heavy cat eye tends to "
+   "disappear under the hood or drag the outer corner down."),
+  ("What lash style suits round eyes?",
+   "Cat eye or squirrel, which draw the eye outwards and balance the roundness. Doll eye makes round eyes "
+   "look rounder, which is fine if that is the look you want."),
+  ("Can I get long lash extensions if my natural lashes are short?",
+   "Only a little longer than your own. An extension much longer than the natural lash is too heavy for "
+   "it. Fullness can be added with a hybrid or volume set instead of extra length."),
+  ("Can I wear lash extensions with glasses?",
+   "Yes. Say so at the consultation and the lengths are kept short enough that the lashes do not touch "
+   "the lenses."),
+ ],
+ "cta":"Not sure which shape suits you? That is what the consultation is for. Bring a photo.",
+},
 ]
 
 
@@ -335,4 +488,24 @@ def _refill_table():
         rows.append([label] + ["$%d" % _R[n][i] for n, _ in prices.FULL_SETS])
     return heads, rows
 
-MORE_TABLES = {"how-long-do-lash-extensions-last": _refill_table()}
+MORE_TABLES = {
+ "how-long-do-lash-extensions-last": _refill_table(),
+ "do-lash-extensions-damage-natural-lashes": (
+   ["", "A good set", "A set to worry about"],
+   [["How it feels", "You forget it is there", "Sore, itchy, tight or heavy"],
+    ["Brushing", "A spoolie passes straight through", "It catches, because lashes are stuck together"],
+    ["At the lid", "A small gap between extension and skin", "Extensions or adhesive touching the skin"],
+    ["Shedding", "One extension with one natural lash", "Clumps, or several lashes on one extension"],
+    ["Appointment", "Around two hours for a full set", "Under an hour"]]),
+ "lash-extension-styles-eye-shapes": (
+   ["Eye shape", "Usually suits", "Go easy on"],
+   [["Almond", "Almost anything; natural or cat eye", "Nothing in particular"],
+    ["Round", "Cat eye or squirrel, to lengthen", "Doll eye, unless you want rounder"],
+    ["Hooded", "Doll eye or squirrel, stronger curl", "Heavy cat eye"],
+    ["Downturned", "Squirrel, to lift the outer third", "Long lashes at the very corner"],
+    ["Upturned", "Natural or doll eye", "Extreme cat eye"],
+    ["Close-set", "Cat eye, length towards the outside", "Length at the inner corner"],
+    ["Wide-set", "Doll eye, length towards the centre", "Extreme cat eye"],
+    ["Deep-set", "Natural or doll eye, softer curl", "Curls that hit the brow bone"],
+    ["Monolid", "Doll eye, stronger curl", "Very soft curls that point down"]]),
+}

@@ -23,7 +23,7 @@ INDEXNOW_KEY = "08c01bd8e2daf37158d5686d6a569eb4"
 
 # sitemap priority; anything indexable but unlisted gets 0.6
 PRIORITY = {"": "1.0", "services.html": "0.9", "lash-extensions-yanchep.html": "0.9",
-            "eyebrows-yanchep.html": "0.9", "areas-we-serve.html": "0.8", "contact.html": "0.7",
+            "eyebrows-yanchep.html": "0.9", "lash-infills-yanchep.html": "0.8", "areas-we-serve.html": "0.8", "contact.html": "0.7",
             "aftercare.html": "0.7", "gallery.html": "0.6", "about.html": "0.6"}
 INNER = ("eglinton", "two-rocks", "alkimos", "jindalee", "butler")   # the real catchment
 

@@ -3,6 +3,7 @@
 # Bec's two email setup guides are left published in case she still uses the link.
 exclude:
   - marketing/seo
+  - marketing/review-card
   - "marketing/*.md"
   - marketing/GBP-DESCRIPTION.txt
   - marketing/FACEBOOK-SETUP.txt

@@ -191,7 +191,7 @@ def build():
       <div class="step"><div><h3>Refills every two to three weeks</h3>
         <p>$60 at two weeks, $75 at three for a classic set. Beyond three weeks there is usually too little
         of the set left and it is priced as a new full set, so most clients book the next one before they
-        leave. <a href="how-long-do-lash-extensions-last.html">How refills work</a>.</p></div></div>
+        leave. <a href="lash-infills-yanchep.html">Lash infills &amp; prices</a>.</p></div></div>
     </div>
 
     <div class="sec-head center rv" style="margin-top:clamp(66px,9vw,110px)">
@@ -231,6 +231,8 @@ def build():
       <a class="btn ghost" href="how-long-do-lash-extensions-last.html" style="margin:0 8px 8px 0">How long lashes last</a>
       <a class="btn ghost" href="first-lash-extension-appointment.html" style="margin:0 8px 8px 0">Your first appointment</a>
       <a class="btn ghost" href="wedding-lash-extensions.html" style="margin:0 8px 8px 0">Wedding lashes</a>
+      <a class="btn ghost" href="lash-infills-yanchep.html" style="margin:0 8px 8px 0">Lash infills</a>
+      <a class="btn ghost" href="lash-extension-styles-eye-shapes.html" style="margin:0 8px 8px 0">Styles for your eye shape</a>
       <a class="btn ghost" href="eyebrows-yanchep.html" style="margin:0 8px 8px 0">Eyebrows Yanchep</a>
       <a class="btn ghost" href="aftercare.html" style="margin:0 8px 8px 0">Aftercare</a>
     </div>
