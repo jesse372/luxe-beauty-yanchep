@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Generates the suburb landing pages + the "Areas We Serve" hub for
-Luxe Beauty Yanchep, then rewrites sitemap.xml.
+Luxe Beauty Yanchep. Also holds the shared NAV / footer / head used by every
+other generator.
 
-Run:  python3 marketing/seo/build_seo.py
+Run:  marketing/seo/build_all.sh   (runs every generator, then finalize.py)
 It is idempotent - safe to re-run after editing suburbs.py.
 """
 import json, os, sys, datetime
@@ -14,17 +15,16 @@ TIER_B = [b for b in TIER_B if b[0] not in _a]   # promoted suburbs get a page, 
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 SITE = "https://luxebeautyyanchep.com"
-TODAY = "2026-11-05"
 
 NAV = """<header class="site-head">
   <div class="head-in">
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <span class="mark" aria-hidden="true">LB</span>
       <span><b>Luxe Beauty</b><small>Lashes &amp; Brows</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-label="Menu">&#9776;</button>
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="./">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="areas-we-serve.html">Areas</a>
@@ -44,15 +44,21 @@ def footer(area_line):
         <p>Luxury lashes &amp; brows in a private home studio.<br>Enhancing your natural beauty.</p></div>
       <div><h4>Treatments</h4>
         <a href="lash-extensions-yanchep.html">Lash extension prices</a>
-        <a href="services.html">All services &amp; pricing</a></div>
+        <a href="eyebrows-yanchep.html">Eyebrows Yanchep</a>
+        <a href="services.html">All services &amp; pricing</a>
+        <a href="aftercare.html">Aftercare</a></div>
       <div><h4>Guides</h4>
+        <a href="lash-guides.html">All lash guides</a>
         <a href="lash-extensions-cost-perth.html">What lashes cost</a>
-        <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a></div>
+        <a href="classic-vs-hybrid-vs-volume-lashes.html">Classic, hybrid or volume</a>
+        <a href="how-long-do-lash-extensions-last.html">How long lashes last</a>
+        <a href="first-lash-extension-appointment.html">Your first appointment</a></div>
       <div><h4>Areas served</h4>
         <a href="areas-we-serve.html">All areas we serve</a>
-        <a href="lash-extensions-butler.html">Lashes Butler</a>
+        <a href="lash-extensions-two-rocks.html">Lashes Two Rocks</a>
+        <a href="lash-extensions-eglinton.html">Lashes Eglinton</a>
         <a href="lash-extensions-alkimos.html">Lashes Alkimos</a>
-        <a href="lash-extensions-clarkson.html">Lashes Clarkson</a></div>
+        <a href="lash-extensions-butler.html">Lashes Butler</a></div>
       <div><h4>Visit</h4>
         <p>Yanchep, WA 6035<br>Private home studio &mdash; exact address<br>sent with your booking confirmation.</p></div>
       <div><h4>Get in touch</h4>
@@ -79,7 +85,7 @@ PRICING = """    <div class="menu rv">
       <div class="row"><span class="name">Volume Full Set</span><span class="desc">Lightweight fans for density and softness.</span><span class="price">$160</span></div>
       <div class="row"><span class="name">Mega Volume Full Set</span><span class="desc">Maximum density, still weightless.</span><span class="price">$180</span></div>
       <div class="row"><span class="name">Lash Refills</span><span class="desc">Two and three week refills for every style, priced in proportion to the set. <a href="services.html">Full list</a>.</span><span class="price">from $60</span></div>
-      <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Add-on to any lash set or refill.</span><span class="price">$40</span></div>
+      <div class="row"><span class="name">Brow Shape &amp; Tint</span><span class="desc">Add-on to any lash set or refill. <a href="eyebrows-yanchep.html">About brows</a>.</span><span class="price">$40</span></div>
       <div class="row"><span class="name">Brow Shape &amp; Tint + Lash Tint</span><span class="desc">Bookable on its own. Save $5.</span><span class="price">$60</span></div>
     </div>"""
 
@@ -110,9 +116,6 @@ def head(title, desc, slug, hero_img, extra_ld):
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Luxe Beauty">
 <meta name="theme-color" content="#0C0B0A">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="preload" as="image" href="{hero}" fetchpriority="high">
 {ld}
@@ -127,8 +130,9 @@ ALL_NAMES = [s["name"] for s in TIER_A] + [b[0] for b in TIER_B]
 def build_suburb(s, idx):
     n, slug = s["name"], "lash-extensions-%s.html" % s["slug"]
     title = "Lash Extensions %s | Lashes &amp; Brows | Luxe Beauty Yanchep" % n
-    desc = ("Lash extensions, refills and brow shaping for %s, WA. A private studio in Yanchep, "
-            "about %s minutes from %s via %s. Classic sets from $120." % (n, s["mins"], n, s["route"]))
+    desc = ("Lash extensions for %s, WA. A private studio in Yanchep, about %s minutes away. "
+            "Classic sets $120, refills from $60, brows from $25. Book online." % (n, s["mins"]))
+    assert len(desc) <= 160, (n, len(desc))
     desc_plain = desc.replace("&mdash;", "-")
 
     breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
@@ -213,10 +217,10 @@ def build_suburb(s, idx):
         <a href="lash-extensions-yanchep.html">Full details &amp; pricing</a>.</p></div>
       <div class="card"><span class="num">02</span><h3>Lash refills</h3>
         <p>Two and three week refills for classic, hybrid, volume and mega volume sets, and refills of
-        another artist&rsquo;s work. <a href="services.html">Full details &amp; pricing</a>.</p></div>
+        another artist&rsquo;s work. <a href="how-long-do-lash-extensions-last.html">How refills work</a>.</p></div>
       <div class="card"><span class="num">03</span><h3>Brows &amp; tinting</h3>
         <p>Brow shaping, brow tint and lash tint, added to a lash appointment or booked together as a package.
-        <a href="services.html">Full details &amp; pricing</a>.</p></div>
+        <a href="eyebrows-yanchep.html">Eyebrows in Yanchep</a>.</p></div>
     </div>
 
     <div class="sec-head center rv" style="margin-top:clamp(66px,9vw,110px)">
@@ -256,8 +260,9 @@ def build_suburb(s, idx):
 def build_hub():
     slug = "areas-we-serve.html"
     title = "Areas We Serve | Lash &amp; Brow Studio Near You | Luxe Beauty Yanchep"
-    desc = ("Luxe Beauty is a private lash and brow studio in Yanchep, WA, serving 60+ suburbs across "
-            "Perth's northern corridor - Two Rocks, Alkimos, Butler, Clarkson, Joondalup and beyond.")
+    desc = ("A private lash and brow studio in Yanchep, WA, serving 60+ suburbs across Perth's northern "
+            "corridor, with distances and drive times for each.")
+    assert len(desc) <= 160, len(desc)
 
     area_served = ([{"@type":"City","name":s["name"],"postalCode":s["postcode"]} for s in TIER_A]
                    + [{"@type":"City","name":b[0],"postalCode":b[1]} for b in TIER_B]
@@ -396,22 +401,7 @@ def main():
     written.append((slug, "0.9"))
     print("  wrote", slug)
 
-    guides = [("lash-extensions-cost-perth.html","0.8"),
-              ("classic-vs-hybrid-vs-volume-lashes.html","0.7")]
-    core = [("", "1.0"), ("services.html","0.9"), ("lash-extensions-yanchep.html","0.9"),
-            ("gallery.html","0.7"), ("contact.html","0.8"), ("aftercare.html","0.6"),
-            ("about.html","0.6")]
-    urls = (core[:3] + [("areas-we-serve.html","0.9")] + guides
-            + [w for w in written if w[0]!="areas-we-serve.html"] + core[3:])
-    seen, out = set(), []
-    for u,p in urls:
-        if u in seen: continue
-        seen.add(u)
-        out.append('  <url><loc>%s/%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>' % (SITE,u,TODAY,p))
-    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' \
-         + "\n".join(out) + "\n</urlset>\n"
-    open(os.path.join(ROOT,"sitemap.xml"),"w",encoding="utf-8").write(sm)
-    print("  wrote sitemap.xml (%d urls)" % len(out))
+    # sitemap.xml is written by finalize.py (content-hash lastmod), not here
 
 if __name__ == "__main__":
     main()

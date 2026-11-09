@@ -1,0 +1,11 @@
+# GitHub Pages publishes every file in this repo. These are internal working files
+# (SEO plans, competitor notes, build scripts) and must not be served on the public site.
+# Bec's two email setup guides are left published in case she still uses the link.
+exclude:
+  - marketing/seo
+  - "marketing/*.md"
+  - marketing/GBP-DESCRIPTION.txt
+  - marketing/FACEBOOK-SETUP.txt
+  - marketing/INSTAGRAM-4-WEEKS.txt
+  - marketing/square-services-import.csv
+  - photos/README.txt

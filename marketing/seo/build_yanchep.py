@@ -17,9 +17,9 @@ SLUG = "lash-extensions-yanchep.html"
 URL  = SITE + "/" + SLUG
 
 TITLE = "Eyelash Extension Prices Yanchep | Classic, Hybrid, Volume &amp; Mega"
-DESC  = ("Eyelash extensions in Yanchep, WA from $120. Classic, hybrid, volume and mega volume, "
-         "applied one lash at a time in a private studio - one client at a time, prices published, "
-         "patch tests available.")
+DESC  = ("Eyelash extensions in Yanchep, WA from $120. Classic, hybrid, volume and mega volume in a "
+         "private studio. One client at a time, and every price published.")
+assert len(DESC) <= 160, len(DESC)
 
 FAQS = [
  ("How much are lash extensions in Yanchep?",
@@ -189,8 +189,9 @@ def build():
         actually matters rather than sold a product.
         <a href="aftercare.html">Full aftercare guide</a>.</p></div></div>
       <div class="step"><div><h3>Refills every two to three weeks</h3>
-        <p>$60 at two weeks, $75 at three. Past about four weeks too little of the set remains and it is
-        priced as a new full set, so most clients book the next one before they leave.</p></div></div>
+        <p>$60 at two weeks, $75 at three for a classic set. Beyond three weeks there is usually too little
+        of the set left and it is priced as a new full set, so most clients book the next one before they
+        leave. <a href="how-long-do-lash-extensions-last.html">How refills work</a>.</p></div></div>
     </div>
 
     <div class="sec-head center rv" style="margin-top:clamp(66px,9vw,110px)">
@@ -203,7 +204,8 @@ def build():
       heavy one, and that regular beachgoers usually do better on a two-week refill cycle than a three-week one.</p>
       <p>Sunscreen is the quiet culprit. It migrates into the lash line through the day and breaks down
       adhesive faster than swimming does. Rinsing with fresh water after the beach and brushing the
-      lashes through once they are dry makes a bigger difference than any product sold for the purpose.</p>
+      lashes through once they are dry makes a bigger difference than any product sold for the purpose.
+      More in <a href="swimming-with-lash-extensions.html">swimming with lash extensions</a>.</p>
       <p>The studio is a private home studio in Yanchep, minutes from Yanchep Lagoon and the town centre,
       with free off-street parking and no shopping-centre car park to navigate. The exact address is sent
       with your booking confirmation. Clients also travel in from
@@ -226,6 +228,10 @@ def build():
     <div class="center" style="max-width:760px;margin:0 auto">
       <a class="btn ghost" href="lash-extensions-cost-perth.html" style="margin:0 8px 8px 0">What lashes cost</a>
       <a class="btn ghost" href="classic-vs-hybrid-vs-volume-lashes.html" style="margin:0 8px 8px 0">Classic, hybrid or volume</a>
+      <a class="btn ghost" href="how-long-do-lash-extensions-last.html" style="margin:0 8px 8px 0">How long lashes last</a>
+      <a class="btn ghost" href="first-lash-extension-appointment.html" style="margin:0 8px 8px 0">Your first appointment</a>
+      <a class="btn ghost" href="wedding-lash-extensions.html" style="margin:0 8px 8px 0">Wedding lashes</a>
+      <a class="btn ghost" href="eyebrows-yanchep.html" style="margin:0 8px 8px 0">Eyebrows Yanchep</a>
       <a class="btn ghost" href="aftercare.html" style="margin:0 8px 8px 0">Aftercare</a>
     </div>
   </div>

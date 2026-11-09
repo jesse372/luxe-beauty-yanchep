@@ -11,14 +11,56 @@ For "lash extensions near me" in the northern corridor, ranking works like this:
 
 | Lever | Impact | Status |
 |---|---|---|
-| **Google Business Profile + reviews** | Owns the map pack, which sits above every organic result | **NOT CREATED YET — do this first** (see `YANCHEP-NUMBER-ONE.md`) |
-| Suburb landing pages | Wins organic for "lash extensions <suburb>" | Done — 12 pages + hub |
+| **Google Business Profile + reviews** | Owns the map pack, which sits above every organic result | Profile is LIVE (138 views in Oct 2026). **Zero reviews** and the category shows "Beauty salon", not "Eyelash salon" — see section 0 |
+| Homepage + lash prices + eyebrows pages | The three pages that can rank for Yanchep searches | Done (2026-11-09 pass) |
+| Suburb landing pages | Wins organic for "lash extensions <suburb>" | Built (22 + hub), but Google has crawled almost none of them — see section 0 |
+| Guides | Questions people ask before they pick a salon | 6 guides + hub |
 | Citations (NAP consistency) | Supporting trust signal | Not started |
-| Backlinks | Slow, compounding | Not started |
+| Backlinks | Slow, compounding. The reason Google is not crawling the site | Not started |
 
 **The suburb pages cannot rank you in the map pack.** Map-pack position is
 proximity + category + review signals, and nothing on the website changes it.
 If only one thing gets done this month, it is the profile and ten reviews.
+
+---
+
+## 0. Where things stand (measured 2026-11-09)
+
+Numbers from Search Console (`GSC_SITE=sc-domain:luxebeautyyanchep.com python3 ~/JesseOS/workspace/gsc/gsc.py ...`):
+
+- **About 80 impressions and 2-4 clicks a week**, average position 7. Yanchep is a small market.
+- **Only 6 of 32 pages were indexed** seven weeks after launch. 26 had never been crawled, including
+  every suburb page bar none and both guides. Google knows the URLs exist and has not bothered to
+  fetch them. That is a trust problem (new domain, no links, no reviews), not a content problem,
+  and more pages do not fix it.
+- The searches the site actually shows for: "eyebrows yanchep" (position 6, the most-seen query),
+  "yanchep beauty", "yanchep beauty salon", "lash extensions near me". Nothing suburb-specific.
+- **Bing has indexed nothing.** Bing feeds ChatGPT search, Copilot and DuckDuckGo.
+- Mobile Lighthouse on the homepage before this pass: performance 82, largest paint 4.0s.
+
+What was done about it on 2026-11-09:
+
+1. Homepage: the `<h1>` is now "Lash extensions & brows · Yanchep, WA" (the brand line keeps its
+   look as a styled paragraph). Added a price list, an eyebrows section, nine FAQs, guide links and
+   links to the six nearest suburbs. Title tag untouched.
+2. New `eyebrows-yanchep.html`, for the query the site is already seen for.
+3. Four new guides (how long lashes last, swimming, first appointment, weddings) plus a guides hub.
+4. Aftercare page rebuilt into a proper guide with FAQs. Services, about, contact and gallery got
+   real titles and structured data.
+5. Speed: fonts are self-hosted, every photo is WebP with phone-sized versions.
+6. Sitemap priorities now favour the pages that can win: Yanchep pages first, the five nearest
+   suburbs next, the outer ring last. `lastmod` only moves when a page really changes.
+7. IndexNow set up for Bing (`marketing/seo/indexnow.py`).
+8. The Google Maps listing is linked from the site's structured data, the contact page and aftercare.
+
+**Decision still open: the outer-ring suburb pages.** Kinross, Currambine, Joondalup, Burns Beach,
+Iluka, Connolly, Ocean Reef, Mullaloo, Tapping and Wanneroo are 23-30 minutes away with their own
+lash salons. They were left in place because Google has not judged them yet. If Search Console still
+shows them as "Discovered - currently not indexed" in mid-January 2027, fold them into the hub page
+and keep only the pages earning impressions.
+
+**What moves the needle from here is off the website:** Google reviews, the profile's primary
+category, real client photos, and a handful of genuine links. See sections 3 and 5.
 
 ---
 
@@ -79,14 +121,20 @@ which is legitimate.
 ### Rebuilding
 
 ```bash
-python3 marketing/seo/build_seo.py      # suburb pages + hub + sitemap.xml
-python3 marketing/seo/build_guides.py   # guide pages   (run second)
-python3 marketing/seo/build_yanchep.py  # the money page (run last)
+marketing/seo/build_all.sh              # every generator in the right order, then the checks
+python3 marketing/seo/indexnow.py       # after the change is LIVE: tells Bing what changed
+GSC_SITE=sc-domain:luxebeautyyanchep.com python3 ~/JesseOS/workspace/gsc/gsc.py submit-sitemap
 ```
 
-Content lives in `marketing/seo/suburbs.py` and `marketing/seo/guides.py`. All three
-generators are idempotent. `build_guides.py` imports helpers from `build_seo.py`, so
-nav/footer changes only need making once, in `build_seo.py`.
+`build_all.sh` ends with `check.py`, which fails the build on a broken link, a missing image,
+FAQ markup that does not match the page, a description over 160 characters, prices that disagree
+with `prices.py`, or suburb pages that have drifted too close to each other.
+
+Content lives in `suburbs.py`, `guides.py` + `guides_more.py`, `build_yanchep.py` (lash prices
+page), `build_brows.py` (eyebrows page) and `build_schema.py` (homepage FAQ, structured data,
+`llms.txt`). Nav and footer are in `build_seo.py` and are copied onto the hand-written pages
+(index, services, about, aftercare, gallery, contact) by `build_schema.py`. `finalize.py` runs last:
+WebP images, fonts, sitemap. To add a photo, drop the `.jpg` in `photos/` and rebuild.
 
 ### Technical
 

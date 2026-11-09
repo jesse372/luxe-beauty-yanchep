@@ -5,6 +5,7 @@ These chase the high-volume questions people ask BEFORE they search for a salon.
 GUIDES = [
 {
  "slug":"lash-extensions-cost-perth",
+ "short":"What lashes cost",
  "title":"How Much Do Lash Extensions Cost in Perth? (2026 Price Guide)",
  "h1":"What lash extensions<br>actually cost",
  "eyebrow":"Price guide &middot; Perth 2026",
@@ -66,6 +67,7 @@ GUIDES = [
 },
 {
  "slug":"classic-vs-hybrid-vs-volume-lashes",
+ "short":"Classic, hybrid or volume",
  "title":"Classic vs Hybrid vs Volume Lashes: A Plain Explanation",
  "h1":"Classic, hybrid<br>or volume?",
  "eyebrow":"Lash styles explained",
@@ -136,3 +138,8 @@ TABLES = {
     ["Suits","Dense natural lashes","Sparse or uneven","Most lash types","Healthy, strong lashes"],
     ["First set?","Yes","Yes","Maybe","Rarely"]]),
 }
+
+# ---- guides added 2026-11-09 live in guides_more.py ----
+from guides_more import MORE_GUIDES, MORE_TABLES
+GUIDES += MORE_GUIDES
+TABLES.update(MORE_TABLES)
