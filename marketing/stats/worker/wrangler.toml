@@ -1,0 +1,14 @@
+# luxe-stats: private visitor counter for luxebeautyyanchep.com (see src/index.js).
+# Deploy:  cd marketing/stats/worker && wrangler deploy
+name = "luxe-stats"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "luxe-stats"
+database_id = "5b6c45a5-3ebf-4c35-b454-332a341e4c2b"
+
+[observability]
+enabled = true

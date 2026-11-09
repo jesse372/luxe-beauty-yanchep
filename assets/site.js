@@ -9,6 +9,11 @@
 
 const BOOKING_URL = "https://book.squareup.com/appointments/7f8c8bo8u2qnx0/location/L33Q7M0YA0VCJ";
 
+/* Visitor counter (marketing/stats). Counts page views and booking/contact clicks per day.
+   No cookies, no IP addresses, no identifiers. Opt your own phone out once by visiting any
+   page with ?stats=off (it is remembered on that device). Set to "" to switch counting off. */
+const STATS_URL = "https://luxe-stats.madlad-taps.workers.dev/e";
+
 const CONTACT = {
   instagram: "https://www.instagram.com/luxebeautyyanchep/",
   email:     "bec@luxebeautyyanchep.com",   // Namecheap Private Email mailbox
@@ -42,6 +47,37 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function () { setTimeout(bbUpdate, 0); });
     bbUpdate();
   }
+
+  /* --- visitor counter -------------------------------------- */
+  var stats = (function () {
+    try {
+      if (/[?&]stats=off\b/.test(location.search)) localStorage.setItem("stats", "off");
+      if (!STATS_URL || !navigator.sendBeacon || localStorage.getItem("stats") === "off") return function () {};
+      var first = !sessionStorage.getItem("v");
+      sessionStorage.setItem("v", "1");
+      var ref = "";
+      try { ref = document.referrer ? new URL(document.referrer).hostname : ""; } catch (e) {}
+      if (ref === location.hostname) ref = "";
+      return function (ev, firstView) {
+        try {
+          navigator.sendBeacon(STATS_URL, JSON.stringify({
+            e: ev, p: location.pathname, r: ref, s: firstView ? 1 : 0,
+            m: matchMedia("(max-width:760px)").matches ? 1 : 0 }));
+        } catch (e) {}
+      };
+    } catch (e) { return function () {}; }
+  })();
+  stats("view", !sessionStorage.getItem("counted"));
+  sessionStorage.setItem("counted", "1");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a"); if (!a) return;
+    var h = a.getAttribute("href") || "";
+    if (a.hasAttribute("data-book")) stats("book");
+    else if (h.indexOf("tel:") === 0) stats("call");
+    else if (h.indexOf("mailto:") === 0) stats("email");
+    else if (h.indexOf("instagram.com") !== -1) stats("instagram");
+    else if (h.indexOf("google.com/maps") !== -1) stats("maps");
+  }, true);
 
   /* --- booking links --------------------------------------- */
   document.querySelectorAll("[data-book]").forEach(function (a) {

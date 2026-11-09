@@ -6,6 +6,7 @@ exclude:
   - marketing/review-card
   - marketing/aftercare-card
   - marketing/instagram
+  - marketing/stats
   - "marketing/*.md"
   - marketing/GBP-DESCRIPTION.txt
   - marketing/FACEBOOK-SETUP.txt

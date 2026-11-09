@@ -104,6 +104,10 @@ booking = re.search(r'const BOOKING_URL = "([^"]+)"', js).group(1)
 book_page = open(os.path.join(ROOT, "book.html"), encoding="utf-8").read()
 if book_page.count(booking) < 3: E("book.html", "does not forward to the BOOKING_URL in site.js (%s)" % booking)
 if booking not in pages["index.html"]: E("index.html", "schema booking link differs from site.js")
+stats_url = re.search(r'const STATS_URL = "([^"]*)"', js).group(1)
+for stub in ("book.html", "review.html"):
+    if stats_url and stats_url not in open(os.path.join(ROOT, stub), encoding="utf-8").read():
+        E(stub, "visitor counter address differs from STATS_URL in site.js")
 low = min(p for _, p in prices.FULL_SETS)
 if "from $%d" % low not in js: E("assets/site.js", "phone booking bar should say 'from $%d' (prices.py)" % low)
 for claim in ("at Luxe Beauty Yanchep\"", "studio in Yanchep\""):
