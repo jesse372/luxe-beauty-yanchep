@@ -17,6 +17,32 @@ const CONTACT = {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  /* --- phones: a "Book now" bar that stays on screen --------
+     On a phone the only booking button outside the hero is inside the menu.
+     This bar appears once the hero has scrolled away and steps aside at the
+     footer (which has its own button). The price is checked against
+     prices.py by marketing/seo/check.py - change it there, not here.      */
+  if (!document.querySelector(".bookbar")) {
+    var bb = document.createElement("div");
+    bb.className = "bookbar";
+    bb.innerHTML = '<span>Lash sets <b>from $120</b></span>' +
+      '<a class="btn" data-book href="https://www.instagram.com/luxebeautyyanchep/">Book now</a>';
+    document.body.appendChild(bb);
+    var foot = document.querySelector(".site-foot"), navEl = document.querySelector(".nav");
+    var bbTick = false;
+    var bbUpdate = function () {
+      var past = scrollY > innerHeight * 0.6;
+      var atFoot = foot && foot.getBoundingClientRect().top < innerHeight - 40;
+      var menuOpen = navEl && navEl.classList.contains("open");
+      bb.classList.toggle("show", past && !atFoot && !menuOpen);
+      bbTick = false;
+    };
+    addEventListener("scroll", function () { if (!bbTick) { bbTick = true; requestAnimationFrame(bbUpdate); } }, { passive: true });
+    addEventListener("resize", bbUpdate, { passive: true });
+    document.addEventListener("click", function () { setTimeout(bbUpdate, 0); });
+    bbUpdate();
+  }
+
   /* --- booking links --------------------------------------- */
   document.querySelectorAll("[data-book]").forEach(function (a) {
     a.href = BOOKING_URL;

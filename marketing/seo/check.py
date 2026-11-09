@@ -98,6 +98,18 @@ rows = dict((H.unescape(n), int(p)) for n, p in re.findall(
 for n, p in [(n + " Full Set", p) for n, p in prices.FULL_SETS] + [(n, p) for n, p, _ in prices.refill_services()]:
     if rows.get(n) != p: E("services.html", "%s is %s on the page but %s in prices.py" % (n, rows.get(n), p))
 
+# one booking link everywhere: site.js is the source, /book and the schema must match it
+js = open(os.path.join(ROOT, "assets", "site.js"), encoding="utf-8").read()
+booking = re.search(r'const BOOKING_URL = "([^"]+)"', js).group(1)
+book_page = open(os.path.join(ROOT, "book.html"), encoding="utf-8").read()
+if book_page.count(booking) < 3: E("book.html", "does not forward to the BOOKING_URL in site.js (%s)" % booking)
+if booking not in pages["index.html"]: E("index.html", "schema booking link differs from site.js")
+low = min(p for _, p in prices.FULL_SETS)
+if "from $%d" % low not in js: E("assets/site.js", "phone booking bar should say 'from $%d' (prices.py)" % low)
+for claim in ("at Luxe Beauty Yanchep\"", "studio in Yanchep\""):
+    for slug, s in pages.items():
+        if re.search(r'alt="[^"]*' + claim, s): E(slug, "an image description claims a stock photo is the studio's own work")
+
 # suburb pages must stay different from each other (doorway-page guard)
 def grams(s, n=8):
     w = re.findall(r"[a-z0-9$']+", text_of(s[s.find("</header>"):s.find("<footer")]).lower())

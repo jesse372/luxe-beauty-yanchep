@@ -26,6 +26,7 @@ PHONE = "+61411487177"
 # The Google Business Profile listing (Maps CID). Linking it from the site's schema ties the
 # website and the Maps listing together as one business.
 GOOGLE_MAPS = "https://www.google.com/maps?cid=5383694766537348091"
+BOOKING_URL = "https://book.squareup.com/appointments/7f8c8bo8u2qnx0/location/L33Q7M0YA0VCJ"   # same as assets/site.js (check.py compares)
 
 SERVICES = [
     ("Classic Lash Extensions", "120", "One extension per natural lash for defined, everyday length."),
@@ -116,6 +117,11 @@ def business_node():
         "knowsAbout": KNOWS_ABOUT,
         "availableLanguage": {"@type": "Language", "name": "English"},
         "hasMap": GOOGLE_MAPS,
+        "potentialAction": {"@type": "ReserveAction", "name": "Book an appointment",
+            "target": {"@type": "EntryPoint", "urlTemplate": BOOKING_URL, "inLanguage": "en-AU",
+                       "actionPlatform": ["https://schema.org/DesktopWebPlatform",
+                                          "https://schema.org/MobileWebPlatform"]},
+            "result": {"@type": "Reservation", "name": "Lash or brow appointment"}},
         "sameAs": ["https://www.instagram.com/luxebeautyyanchep/",
                    "https://www.facebook.com/luxebeautyyanchep",
                    GOOGLE_MAPS],
@@ -300,7 +306,7 @@ def write_llms():
     A("- Instagram: https://www.instagram.com/luxebeautyyanchep/")
     A("- Facebook: https://www.facebook.com/luxebeautyyanchep")
     A("- Google Maps: %s" % GOOGLE_MAPS)
-    A("- Book online: https://book.squareup.com/appointments/7f8c8bo8u2qnx0/location/L33Q7M0YA0VCJ")
+    A("- Book online: %s/book (forwards to %s)" % (SITE, BOOKING_URL))
     A("")
     A("## Services and prices (AUD)")
     A("")
