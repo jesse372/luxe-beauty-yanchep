@@ -43,6 +43,8 @@ for slug, s in pages.items():
     c = re.search(r'<link rel="canonical" href="([^"]*)"', s)
     if not c or c.group(1) != url: E(slug, "canonical is %s" % (c.group(1) if c else None))
     if "fonts.googleapis.com" in s or "fonts.gstatic.com" in s: E(slug, "still requests Google Fonts")
+    if not re.search(r'href="assets/style\.css\?v=\w+"', s): E(slug, "stylesheet link has no cache-busting version")
+    if s.count('rel="preload" as="font"') != 2: E(slug, "expected 2 font preloads, found %d" % s.count('rel="preload" as="font"'))
 
     # JSON-LD parses; FAQ markup only for questions the page really shows
     visible = set(text_of(q) for q in re.findall(r"<summary>(.*?)</summary>", s, re.S))

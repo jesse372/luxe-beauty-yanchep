@@ -123,8 +123,22 @@ def fonts_pass(html):
     html = re.sub(r'<link rel="preload" as="font"[^>]*>\n?', "", html)
     pre = "".join('<link rel="preload" as="font" type="font/woff2" href="%s" crossorigin>\n' % f
                   for f in FONT_PRELOADS)
-    return html.replace('<link rel="stylesheet" href="assets/style.css">',
-                        pre + '<link rel="stylesheet" href="assets/style.css">', 1)
+    return re.sub(r'(<link rel="stylesheet" href="assets/style\.css(?:\?v=\w+)?">)',
+                  lambda m: pre + m.group(1), html, count=1)
+
+
+def asset_version():
+    """Short hash of the CSS + JS. Pages reference them as style.css?v=<hash>, so a visitor can
+    never get new HTML with an old cached stylesheet (that combination hides the hero photo)."""
+    h = hashlib.sha256()
+    for f in ("assets/style.css", "assets/site.js"):
+        h.update(open(os.path.join(ROOT, f), "rb").read())
+    return h.hexdigest()[:10]
+
+
+def assets_pass(html, v):
+    html = re.sub(r'href="assets/style\.css(?:\?v=\w+)?"', 'href="assets/style.css?v=%s"' % v, html)
+    return re.sub(r'src="assets/site\.js(?:\?v=\w+)?"', 'src="assets/site.js?v=%s"' % v, html)
 
 
 def links_pass(html):
@@ -181,13 +195,14 @@ def write_sitemap(pages):
 
 def main():
     meta = build_images()
+    v = asset_version()
     pages = []
     for path in sorted(glob.glob(os.path.join(ROOT, "*.html"))):
         slug = os.path.basename(path)
         html = open(path, encoding="utf-8").read()
         if not indexable(html):
             continue                               # redirect stubs and 404.html: leave untouched
-        new = links_pass(fonts_pass(images_pass(html, meta)))
+        new = assets_pass(links_pass(fonts_pass(images_pass(html, meta))), v)
         if new != html:
             open(path, "w", encoding="utf-8").write(new)
         if indexable(new):
