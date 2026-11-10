@@ -103,8 +103,14 @@ make you visible.
 
 ## 5. Hours
 
-Mon–Sat 9:00am – 5:00pm
+Monday and Tuesday 9:00am – 9:00pm
+Wednesday 9:00am – 6:00pm
+Thursday 10:30am – 7:30pm
+Friday 9:00am – 5:00pm
+Saturday 9:00am – 1:00pm
 Sunday closed
+
+(From Square, confirmed by Jesse 2026-11-10. On 2026-11-09 Google still showed "opens 8am" - fix it.)
 
 Real availability comes from Square (synced to Bec's Google Calendar), so these are
 just the general opening hours. Keep them broad and let the booking system show the truth.

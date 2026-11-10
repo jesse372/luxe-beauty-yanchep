@@ -10,7 +10,7 @@ whole point.
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_seo as B
-import prices
+import prices, hours
 
 ROOT, SITE = B.ROOT, B.SITE
 SLUG = "lash-extensions-yanchep.html"
@@ -87,9 +87,7 @@ def build():
         "address":{"@type":"PostalAddress","addressLocality":"Yanchep","addressRegion":"WA",
                    "postalCode":"6035","addressCountry":"AU"},
         "geo":{"@type":"GeoCoordinates","latitude":-31.5464,"longitude":115.6353},
-        "openingHoursSpecification":[{"@type":"OpeningHoursSpecification",
-          "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens":"09:00","closes":"17:00"}]},
+        "openingHoursSpecification":hours.schema()},
       "areaServed":[{"@type":"City","name":n} for n in
         ["Yanchep","Eglinton","Two Rocks","Alkimos","Jindalee","Butler","Nowergup"]],
       "hasOfferCatalog":{"@type":"OfferCatalog","name":"Lash extension services","itemListElement":[

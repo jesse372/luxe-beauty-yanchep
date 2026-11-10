@@ -10,6 +10,7 @@ It is idempotent - safe to re-run after editing suburbs.py.
 import json, os, sys, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from suburbs import TIER_A, TIER_B
+import hours
 _a = {s['name'] for s in TIER_A}
 TIER_B = [b for b in TIER_B if b[0] not in _a]   # promoted suburbs get a page, not a row
 
@@ -277,9 +278,7 @@ def build_hub():
                  "postalCode":"6035","addressCountry":"AU"},
       "geo":{"@type":"GeoCoordinates","latitude":-31.5464,"longitude":115.6353},
       "areaServed":area_served,
-      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification",
-        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens":"09:00","closes":"17:00"}],
+      "openingHoursSpecification":hours.schema(),
       "sameAs":["https://www.instagram.com/luxebeautyyanchep/","https://www.facebook.com/luxebeautyyanchep"]}
     crumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE+"/"},

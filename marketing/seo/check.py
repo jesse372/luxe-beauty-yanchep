@@ -11,7 +11,7 @@ and that the suburb pages are still different enough from each other.
 """
 import glob, html as H, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import prices
+import prices, hours
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 SITE = "https://luxebeautyyanchep.com"
@@ -97,6 +97,17 @@ rows = dict((H.unescape(n), int(p)) for n, p in re.findall(
     r'<span class="name">(.*?)</span>.*?<span class="price">\$(\d+)</span>', pages["services.html"]))
 for n, p in [(n + " Full Set", p) for n, p in prices.FULL_SETS] + [(n, p) for n, p, _ in prices.refill_services()]:
     if rows.get(n) != p: E("services.html", "%s is %s on the page but %s in prices.py" % (n, rows.get(n), p))
+
+# opening hours: one source (hours.py). Old wordings must not come back anywhere.
+for slug, s in pages.items():
+    t = text_of(s)
+    for old in ("Monday to Saturday, 9am to 5pm", "9:00am - 5:00pm", "Mon - Sat 9:00am", "Saturdays run 9am to 5pm", "by arrangement"):
+        if old.lower() in t.lower(): E(slug, "stale opening-hours wording: %r" % old)
+for l, t in hours.rows():
+    if ("<b>%s</b><span>%s</span>" % (l.replace(" and ", "&amp;".join((" ", " "))), t)) not in pages["contact.html"]:
+        E("contact.html", "hours table missing %s %s" % (l, t))
+if hours.sentence() not in open(os.path.join(ROOT, "llms.txt"), encoding="utf-8").read():
+    E("llms.txt", "hours sentence differs from hours.py")
 
 # one booking link everywhere: site.js is the source, /book and the schema must match it
 js = open(os.path.join(ROOT, "assets", "site.js"), encoding="utf-8").read()

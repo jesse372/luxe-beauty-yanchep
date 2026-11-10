@@ -79,8 +79,8 @@ TIER_A = [
   ("How far is Yanchep from Alkimos?",
    "About 7.5 kilometres, or nine minutes up Marmion Avenue. No freeway, no shopping-centre car park."),
   ("Do you have evening appointments for shift workers?",
-   "The last appointment usually starts mid-afternoon, but the schedule is flexible for regulars. If "
-   "you are on shift work, ask when you book and something can usually be arranged."),
+   "Yes. The studio is open until 9pm on Monday and Tuesday, 6pm on Wednesday and 7:30pm on Thursday, "
+   "so a set after work is easy to fit in. Live times are shown when you book online."),
   ("Which set suits someone at the beach a lot?",
    "Alkimos clients are in and out of the water constantly, and that shortens the life of a set. A "
    "classic or hybrid set with a slightly stronger adhesive holds up better than mega volume, and a "
@@ -386,8 +386,8 @@ TIER_A += [
    "About 23 kilometres, or twenty-five minutes depending on whether you take Marmion Avenue or the "
    "freeway up to Burns Beach Road."),
   ("Do you do Saturday appointments?",
-   "Yes, Saturdays run 9am to 5pm and they are the busiest day of the week. For a Saturday slot it is "
-   "worth booking two to three weeks ahead, particularly for a full set."),
+   "Yes, Saturday mornings from 9am to 1pm, and they go first. For a Saturday slot it is worth booking "
+   "two to three weeks ahead, particularly for a full set."),
   ("How far in advance should I book?",
    "Weekdays usually have something inside a week. Saturdays and late afternoons go two to three weeks "
    "out. Regulars book their next refill before they leave, which is the easiest way to hold a good time."),

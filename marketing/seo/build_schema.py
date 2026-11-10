@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from suburbs import TIER_A, TIER_B
 from guides import GUIDES
 import build_seo as B
+import hours
 import prices
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
@@ -82,7 +83,7 @@ HOME_FAQS = [
   "About two hours for a classic set and up to two and a half for volume or mega volume. Refills are "
   "around an hour. Only one client is booked at a time."),
  ("What are your opening hours?",
-  "Monday to Saturday, 9am to 5pm. Sunday and evening appointments are available by arrangement."),
+  hours.sentence() + " Evening appointments run on Monday, Tuesday and Thursday."),
  ("Which areas do you serve?",
   "Yanchep, Two Rocks, Eglinton, Alkimos, Jindalee and Butler make up most of the studio's clients, and "
   "people travel from across Perth's northern corridor. Prices are the same wherever you come from."),
@@ -108,10 +109,7 @@ def business_node():
         "address": {"@type": "PostalAddress", "addressLocality": "Yanchep",
                     "addressRegion": "WA", "postalCode": "6035", "addressCountry": "AU"},
         "geo": {"@type": "GeoCoordinates", "latitude": -31.5464, "longitude": 115.6353},
-        "openingHoursSpecification": [{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-            "opens": "09:00", "closes": "17:00"}],
+        "openingHoursSpecification": hours.schema(),
         "areaServed": [{"@type": "City", "name": n, "containedInPlace":
                         {"@type": "State", "name": "Western Australia"}} for n in AREAS],
         "knowsAbout": KNOWS_ABOUT,
@@ -272,6 +270,12 @@ def write_static():
             s = re.sub(r"<!-- LD:START.*?<!-- LD:END -->", lambda m: block, s, flags=re.S)
         else:
             s = s.replace("</head>", block + "\n</head>", 1)
+        if slug == "contact.html":
+            rows_html = "".join("          <div><b>%s</b><span>%s</span></div>\n" % (l.replace(" and ", " &amp; "), t)
+                                for l, t in hours.rows())
+            s, n = re.subn(r'(<!-- HOURS:START[^>]*-->\n).*?(<!-- HOURS:END -->)',
+                           lambda m: m.group(1) + rows_html + m.group(2), s, count=1, flags=re.S)
+            assert n == 1, "contact hours markers not found"
         if slug == "aftercare.html":
             faq_html = "".join('      <details class="faq"><summary>%s</summary><p>%s</p></details>\n'
                                % (esc(q), esc(a)) for q, a in AFTERCARE_FAQS)
@@ -301,7 +305,7 @@ def write_llms():
     A("- Phone: 0411 487 177")
     A("- Email: bec@luxebeautyyanchep.com")
     A("- Website: %s" % SITE)
-    A("- Hours: Monday to Saturday, 9:00am-5:00pm. Sunday and evenings by arrangement.")
+    A("- Hours: " + hours.sentence())
     A("- Booking: by appointment; patch test required 48 hours before a first appointment")
     A("- Instagram: https://www.instagram.com/luxebeautyyanchep/")
     A("- Facebook: https://www.facebook.com/luxebeautyyanchep")
